@@ -1,0 +1,92 @@
+{
+  "version": "2.0",
+  "lastUpdated": "2025-12-05",
+  "prompts": {
+    "core": {
+      "instructions": {
+        "path": "core/INSTRUCTIONS.md",
+        "description": "Master orchestrator for content generation",
+        "version": "1.0"
+      }
+    },
+    "editorial": {
+      "v5": {
+        "master-prompt": {
+          "path": "editorial/v5/master-prompt.md",
+          "description": "Latest SEO/AEO optimized blog post format",
+          "version": "5.0",
+          "output": "10 structured blocks for Shopify"
+        }
+      },
+      "v4": {
+        "master-prompt-video-image": {
+          "path": "editorial/v4/master-prompt-video-image.md",
+          "description": "Blog post format with media generation",
+          "version": "4.1",
+          "output": "11 structured blocks with image/video prompts"
+        }
+      }
+    },
+    "social": {
+      "all-platforms": {
+        "path": "social/formats/all-platforms.md",
+        "description": "Social media posts for all platforms",
+        "version": "1.0",
+        "platforms": ["LinkedIn", "Twitter/X", "Instagram", "Threads", "Facebook"]
+      }
+    },
+    "media": {
+      "images": {
+        "path": "media/images/prompt-templates.md",
+        "description": "AI image generation prompts",
+        "version": "1.0",
+        "tools": ["Midjourney", "DALL-E", "Flux", "Ideogram", "Stable Diffusion"]
+      },
+      "video": {
+        "path": "media/video/script-templates.md",
+        "description": "Video script templates",
+        "version": "1.0",
+        "formats": ["Short-form", "Long-form", "YouTube", "Social"]
+      }
+    },
+    "email": {
+      "sequences": {
+        "path": "email/sequences.md",
+        "description": "Email marketing sequences",
+        "version": "1.0",
+        "types": ["Welcome", "Newsletter", "Launch", "Nurture"]
+      }
+    },
+    "ads": {
+      "copy-formats": {
+        "path": "ads/copy-formats.md",
+        "description": "Paid advertising copy templates",
+        "version": "1.0",
+        "platforms": ["Meta", "Google", "LinkedIn", "YouTube"]
+      }
+    }
+  },
+  "shared": {
+    "article-index": {
+      "path": "shared/article-index.md",
+      "description": "Internal linking reference"
+    },
+    "source-registry": {
+      "path": "shared/source-registry.md",
+      "description": "Trusted external sources"
+    },
+    "service-menu": {
+      "path": "shared/service-menu.md",
+      "description": "CTA service references"
+    }
+  },
+  "quickCommands": {
+    "blog": "editorial/v5/master-prompt.md",
+    "social": "social/formats/all-platforms.md",
+    "email": "email/sequences.md",
+    "video": "media/video/script-templates.md",
+    "images": "media/images/prompt-templates.md",
+    "ads": "ads/copy-formats.md"
+  }
+}
+
