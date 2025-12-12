@@ -1,0 +1,73 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PodcastEpisode Schema Template",
+  "description": "JSON-LD template for Podcast Episode schema (AI-generated podcasts)",
+  "version": "1.0",
+  "template": {
+    "@context": "https://schema.org",
+    "@type": "PodcastEpisode",
+    "name": "{{title}}",
+    "description": "{{description}}",
+    "datePublished": "{{publish_date}}",
+    "duration": "{{duration_iso8601}}",
+    "url": "{{episode_url}}",
+    "audio": {
+      "@type": "AudioObject",
+      "contentUrl": "{{audio_url}}",
+      "encodingFormat": "audio/mpeg",
+      "duration": "{{duration_iso8601}}"
+    },
+    "partOfSeries": {
+      "@type": "PodcastSeries",
+      "name": "{{series_name}}",
+      "url": "{{series_url}}",
+      "author": {
+        "@type": "Organization",
+        "name": "Trending Society"
+      }
+    },
+    "associatedArticle": {
+      "@type": "Article",
+      "@id": "{{article_url}}#article"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Trending Society",
+      "url": "https://trendingsociety.com"
+    },
+    "keywords": "{{keywords}}"
+  },
+  "variables": {
+    "title": "Episode title",
+    "description": "Episode description (for SEO)",
+    "publish_date": "ISO 8601 date string",
+    "duration_iso8601": "Duration in ISO 8601 format (e.g., 'PT10M' for 10 minutes)",
+    "episode_url": "URL to episode page",
+    "audio_url": "Direct URL to audio file (MP3)",
+    "series_name": "Name of the podcast series",
+    "series_url": "URL to podcast series page",
+    "article_url": "URL of source article (if podcast is derived from article)",
+    "keywords": "Comma-separated keywords"
+  },
+  "platforms": {
+    "spotify": "https://open.spotify.com/show/{{spotify_id}}",
+    "apple_podcasts": "https://podcasts.apple.com/podcast/{{apple_id}}",
+    "youtube": "https://youtube.com/@trendingsociety"
+  },
+  "voice_providers": {
+    "elevenlabs": {
+      "api": "https://elevenlabs.io/docs",
+      "features": ["voice_cloning", "text_to_speech", "voice_library"]
+    },
+    "notebooklm": {
+      "features": ["conversational_podcasts", "document_summarization"]
+    }
+  },
+  "vertical_series": {
+    "tech": "Tech Briefing",
+    "finance": "Finance Daily",
+    "sports": "Sports Minute",
+    "business": "Business Insider",
+    "health": "Wellness Weekly"
+  }
+}

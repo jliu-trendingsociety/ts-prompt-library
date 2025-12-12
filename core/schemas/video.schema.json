@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "VideoObject Schema Template",
+  "description": "JSON-LD template for VideoObject schema (AI-generated videos)",
+  "version": "1.0",
+  "template": {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "{{title}}",
+    "description": "{{description}}",
+    "thumbnailUrl": "{{thumbnail_url}}",
+    "uploadDate": "{{upload_date}}",
+    "duration": "{{duration_iso8601}}",
+    "contentUrl": "{{video_url}}",
+    "embedUrl": "{{embed_url}}",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Trending Society",
+      "url": "https://trendingsociety.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://trendingsociety.com/logo.png"
+      }
+    },
+    "author": {
+      "@type": "Person",
+      "name": "{{author_name}}",
+      "url": "{{author_url}}"
+    },
+    "interactionStatistic": {
+      "@type": "InteractionCounter",
+      "interactionType": { "@type": "WatchAction" },
+      "userInteractionCount": "{{view_count}}"
+    },
+    "keywords": "{{keywords}}",
+    "isPartOf": {
+      "@type": "Article",
+      "@id": "{{article_url}}#article"
+    }
+  },
+  "variables": {
+    "title": "Video title",
+    "description": "Video description (for SEO)",
+    "thumbnail_url": "URL to video thumbnail image",
+    "upload_date": "ISO 8601 date string",
+    "duration_iso8601": "Duration in ISO 8601 format (e.g., 'PT1M30S' for 1:30)",
+    "video_url": "Direct URL to video file",
+    "embed_url": "Embeddable video URL",
+    "author_name": "Creator/author name",
+    "author_url": "Author profile URL",
+    "view_count": "Number of views (integer)",
+    "keywords": "Comma-separated keywords",
+    "article_url": "URL of related article (if video is part of article)"
+  },
+  "platforms": {
+    "youtube": "Use for YouTube uploads",
+    "tiktok": "Use for TikTok content",
+    "instagram_reels": "Use for Instagram Reels"
+  },
+  "generators": {
+    "heygen": "AI avatar videos",
+    "pollo_ai": "Fast video generation",
+    "decart": "Real-time lip-sync",
+    "runway": "Cinematic B-roll",
+    "pika": "Short-form motion graphics"
+  }
+}
