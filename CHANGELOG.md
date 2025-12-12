@@ -21,6 +21,33 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.4.0] - 2025-12-12
+
+### Added
+
+- Newspaper Theme for multi-vertical deployment:
+  - Prebuilt Websites: https://demo.tagdiv.com/select_demo/newspaper-prebuilt-websites/?demo-type=membership
+  - 120+ templates, vertical mapping for all 12 verticals
+- Airtable Marketing Ops (TRE-48):
+  - Human QA layer for interns/part-time staff
+  - Upskilling pathway: Intern → AI Upskilling → Portfolio → Creator Commerce
+- Iris ID biometric verification (TRE-49):
+  - Identity foundation for AI Avatar/Voice Cloning consent
+  - KYC/AML compliance, consent capture, wallet binding
+- Universal Creative Income (UCI) infrastructure (TRE-50):
+  - "Voice Once, Earn Forever" revenue model
+  - UCI tiers: Bronze ($50-200/mo), Silver ($200-500), Gold ($500-2K), Platinum ($2K-10K+)
+- Creator Commerce Protocol project link to `.cursorrules`
+- Full ecosystem architecture to Notion documentation
+
+### Updated
+
+- `.cursorrules` version to 1.2.0
+- Linear issues count: 21 (TRE-30 to TRE-50)
+- SYNC_STATUS.md with Creator Economy Infrastructure section
+
+---
+
 ## [2.3.0] - 2025-12-12
 
 ### Added
@@ -160,6 +187,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 | Version | Date       | Highlights                                                   |
 | ------- | ---------- | ------------------------------------------------------------ |
+| 2.4.0   | 2025-12-12 | Newspaper Theme, Airtable Ops, Iris ID, UCI infrastructure   |
 | 2.3.0   | 2025-12-12 | AI Video tools: HeyGen, Pollo.ai, Decart AI, + 5 more        |
 | 2.2.0   | 2025-12-12 | Multi-Vertical Blog Engine, 12 verticals, Notion/Linear sync |
 | 2.1.0   | 2025-12-06 | Enterprise features, v5.1 prompt, cost optimization          |
