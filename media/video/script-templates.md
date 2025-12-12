@@ -1,7 +1,7 @@
 # Trending Society Video Prompt Templates Module
 
-> **Version:** 1.0  
-> **Updated:** December 2024  
+> **Version:** 1.1  
+> **Updated:** December 2025  
 > **Purpose:** Generate video scripts, concepts, and AI video prompts  
 > **Formats:** Short-form (Reels/TikTok/Shorts), Long-form (YouTube), Clips, Ads
 
@@ -9,14 +9,14 @@
 
 ## Platform Video Specifications
 
-| Platform | Length | Aspect Ratio | Dimensions | Style |
-|----------|--------|--------------|------------|-------|
-| TikTok | 15-60s optimal | 9:16 | 1080x1920 | Fast, native, trending |
-| Instagram Reels | 15-90s optimal | 9:16 | 1080x1920 | Polished but authentic |
-| YouTube Shorts | 15-60s max | 9:16 | 1080x1920 | Educational, hook-driven |
-| YouTube Long-form | 8-15min optimal | 16:9 | 1920x1080 | Structured, valuable |
-| LinkedIn Video | 30s-3min optimal | 1:1 or 16:9 | 1080x1080 or 1920x1080 | Professional, insight-driven |
-| Twitter/X Video | 15-45s optimal | 16:9 or 1:1 | 1920x1080 or 1080x1080 | Punchy, shareable |
+| Platform          | Length           | Aspect Ratio | Dimensions             | Style                        |
+| ----------------- | ---------------- | ------------ | ---------------------- | ---------------------------- |
+| TikTok            | 15-60s optimal   | 9:16         | 1080x1920              | Fast, native, trending       |
+| Instagram Reels   | 15-90s optimal   | 9:16         | 1080x1920              | Polished but authentic       |
+| YouTube Shorts    | 15-60s max       | 9:16         | 1080x1920              | Educational, hook-driven     |
+| YouTube Long-form | 8-15min optimal  | 16:9         | 1920x1080              | Structured, valuable         |
+| LinkedIn Video    | 30s-3min optimal | 1:1 or 16:9  | 1080x1080 or 1920x1080 | Professional, insight-driven |
+| Twitter/X Video   | 15-45s optimal   | 16:9 or 1:1  | 1920x1080 or 1080x1080 | Punchy, shareable            |
 
 ---
 
@@ -344,15 +344,15 @@ When generating video content, output in this structure:
 
 Use these patterns for strong video hooks:
 
-| Formula | Example |
-|---------|---------|
-| Bold claim | "This one change doubled our output." |
-| Question | "Why do most creators burn out by year two?" |
-| Curiosity gap | "Nobody talks about this part of scaling." |
-| Pattern interrupt | "Stop. Before you post that, watch this." |
-| Result tease | "Here's the system behind 47 posts a month." |
-| Contrarian | "Everything you know about AI prompts is wrong." |
-| Direct address | "If you're a founder doing your own content, this is for you." |
+| Formula           | Example                                                        |
+| ----------------- | -------------------------------------------------------------- |
+| Bold claim        | "This one change doubled our output."                          |
+| Question          | "Why do most creators burn out by year two?"                   |
+| Curiosity gap     | "Nobody talks about this part of scaling."                     |
+| Pattern interrupt | "Stop. Before you post that, watch this."                      |
+| Result tease      | "Here's the system behind 47 posts a month."                   |
+| Contrarian        | "Everything you know about AI prompts is wrong."               |
+| Direct address    | "If you're a founder doing your own content, this is for you." |
 
 ---
 
@@ -374,22 +374,25 @@ Before outputting video content, verify:
 ## Pacing Guidelines
 
 **Short-form (TikTok/Reels/Shorts):**
+
 - New visual or cut every 2-3 seconds
 - No dead air
 - Text on screen reinforces spoken words
 - Music/sound design matters
 
 **Long-form (YouTube):**
+
 - Pattern interrupt every 30-60 seconds
 - B-roll breaks up talking head
 - Chapter markers for navigation
 - Slower pace is okay if value is high
 
 **LinkedIn:**
+
 - Front-load value (most drop off after 10 seconds)
 - Captions required (most watch muted)
 - Professional but not stiff
 
 ---
 
-*Module built by Trending Society*
+_Module built by Trending Society_

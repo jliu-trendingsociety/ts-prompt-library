@@ -1,10 +1,6 @@
-# Trending Society Prompt Library - Cursor Rules
+# 📚 Trending Society Prompt Library - Cursor Rules
 
-# Last Updated: 2025-12-12
-
-# Version: 1.2.0
-
-## Overview
+> **Last Updated:** 2025-12-12 | **Version:** 1.3.0
 
 This file defines best practices for working with the ts-prompt-library repository.
 All AI assistants and developers should follow these guidelines to maintain consistency
@@ -12,7 +8,20 @@ across GitHub, Notion, and Linear.
 
 ---
 
-## Version Control Requirements
+## 🗺️ Quick Navigation
+
+| Section | Description |
+|---------|-------------|
+| [📋 Version Control](#-version-control-requirements) | File headers, versioning, sync protocol |
+| [🔗 Platform Links](#-external-platform-urls) | GitHub, Notion, Linear URLs |
+| [🎬 AI Video Tools](#-ai-video-generation) | HeyGen, Pollo.ai, Decart, etc. |
+| [💰 Creator Economy](#-creator-commerce-protocol) | UCI, Iris ID, Airtable Ops |
+| [📝 Multi-Vertical Blog](#-multi-vertical-blog-engine-project) | 12 verticals, metrics |
+| [✅ Quality Gates](#-quality-gates) | Article requirements |
+
+---
+
+## 📋 Version Control Requirements
 
 ### When Updating Any File:
 
@@ -48,7 +57,7 @@ across GitHub, Notion, and Linear.
 
 ---
 
-## Platform Sync Protocol
+## 🔄 Platform Sync Protocol
 
 ### Source of Truth Hierarchy:
 
@@ -85,7 +94,7 @@ Key files:
 
 ---
 
-## File Naming Conventions
+## 📁 File Naming Conventions
 
 ### General Rules:
 
@@ -108,7 +117,7 @@ Key files:
 
 ---
 
-## Required File Headers
+## 📄 Required File Headers
 
 ### For Prompt Files (Markdown):
 
@@ -141,7 +150,7 @@ sync_status:
 
 ---
 
-## Commit Message Format
+## 💬 Commit Message Format
 
 Use conventional commits:
 
@@ -172,9 +181,12 @@ chore: Add .cursorrules and SYNC_STATUS.md
 
 ---
 
-## External Resource Links
+## 🔗 External Resource Links
 
-Always hyperlink external resources in documentation:
+Always hyperlink external resources in documentation.
+
+<details>
+<summary>🎙️ <strong>ElevenLabs</strong> (Voice AI)</summary>
 
 ### ElevenLabs:
 
@@ -184,6 +196,11 @@ Always hyperlink external resources in documentation:
 - Voice Licensing: https://elevenlabs.io/vla
 - Iconic Marketplace: https://elevenlabs.io
 
+</details>
+
+<details>
+<summary>📊 <strong>Polymarket</strong> (Prediction Markets)</summary>
+
 ### Polymarket:
 
 - API Docs: https://docs.polymarket.com
@@ -191,12 +208,22 @@ Always hyperlink external resources in documentation:
 - TypeScript SDK: https://polymarket-data.com
 - Python Package: https://pypi.org/project/polymarket-apis/
 
+</details>
+
+<details>
+<summary>📰 <strong>Innoreader</strong> (RSS Feed Ingestion)</summary>
+
 ### Innoreader (RSS Feed Ingestion):
 
 - Homepage: https://www.innoreader.com
 - API Docs: https://developer.innoreader.com
 - Developer Portal: https://www.innoreader.com/developers
 - Features: 305+ feeds, 650-1,070 articles/day across 12 verticals
+
+</details>
+
+<details>
+<summary>🎬 <strong>AI Video Generation</strong> (8 Tools)</summary>
 
 ### AI Video Generation:
 
@@ -250,10 +277,20 @@ Always hyperlink external resources in documentation:
   - Platform: https://www.opus.pro
   - Use: Podcast clip extraction
 
+</details>
+
+<details>
+<summary>🛒 <strong>Shopify</strong> (E-commerce)</summary>
+
 ### Shopify:
 
 - Admin API: https://shopify.dev/docs/api/admin-rest
 - Blog Articles: https://shopify.dev/docs/api/admin-rest/2024-10/resources/article
+
+</details>
+
+<details>
+<summary>🌐 <strong>Newspaper Theme</strong> (Multi-Vertical Deployment)</summary>
 
 ### Newspaper Theme (Multi-Vertical Deployment):
 
@@ -275,6 +312,11 @@ Always hyperlink external resources in documentation:
   - World News: WORLD MATTERS, WORLD NEWS
   - Art: ART MAGAZINE, ART BLOG PRO
 
+</details>
+
+<details>
+<summary>📋 <strong>Airtable</strong> (Marketing Ops)</summary>
+
 ### Airtable (Marketing Ops):
 
 - Platform: https://airtable.com
@@ -285,6 +327,11 @@ Always hyperlink external resources in documentation:
   - QA Status: Pending → In Review → Approved → Published
   - Assigned To, Issues Found, Fix Applied
   - Time Spent, Skill Level, Creator Commerce Eligible
+
+</details>
+
+<details>
+<summary>👁️ <strong>Iris ID</strong> (Biometric Verification)</summary>
 
 ### Iris ID (Biometric Verification):
 
@@ -300,9 +347,11 @@ Always hyperlink external resources in documentation:
   - HeyGen Avatar Creation → Requires Iris ID
   - UCI Payment Eligibility → Requires verified identity
 
+</details>
+
 ---
 
-## Creator Commerce Protocol
+## 🏗️ Creator Commerce Protocol
 
 ### Project Links:
 
@@ -323,19 +372,31 @@ FOUNDATION      → Tenants/Identity, Tiers, Consumers, Ops
 
 ### Upskilling Pathway (Intern → Creator):
 
-```
-Intern QA Role → AI Upskilling → Portfolio Building → Creator Commerce Program → UCI Recipient
+```mermaid
+flowchart LR
+    A[🧑‍💼 Intern QA] --> B[🤖 AI Upskilling]
+    B --> C[📁 Portfolio]
+    C --> D[🎨 Creator Commerce]
+    D --> E[💰 UCI Payments]
+    
+    style A fill:#e3f2fd
+    style B fill:#fff3e0
+    style C fill:#f3e5f5
+    style D fill:#e8f5e9
+    style E fill:#fff9c4
 ```
 
-1. **Intern QA Role**: Human QA via Airtable Marketing Ops
-2. **AI Upskilling**: Learn AI tools, prompt engineering, automation
-3. **Portfolio Building**: Create own content, voice clone, avatar
-4. **Creator Commerce Program**: Full creator-owner status
-5. **UCI Recipient**: Universal Creative Income payments
+| Step | Role | Activities |
+|------|------|------------|
+| 1️⃣ | **Intern QA** | Human QA via Airtable Marketing Ops |
+| 2️⃣ | **AI Upskilling** | Learn AI tools, prompt engineering, automation |
+| 3️⃣ | **Portfolio** | Create own content, voice clone, avatar |
+| 4️⃣ | **Creator Commerce** | Full creator-owner status |
+| 5️⃣ | **UCI Recipient** | Universal Creative Income payments |
 
 ---
 
-## Universal Creative Income (UCI)
+## 💰 Universal Creative Income (UCI)
 
 ### Foundation:
 
@@ -350,17 +411,22 @@ UCI is the revenue model enabling creators to earn passive income from their AI-
 
 ### Revenue Flow:
 
+```mermaid
+flowchart TD
+    A[👁️ Iris ID Verification] --> B[🎙️ Voice/Avatar Clone]
+    B --> C[📝 Content Generated]
+    C --> D[📊 Usage Tracked]
+    D --> E[💳 Weekly Payout]
+    
+    style A fill:#e8eaf6
+    style B fill:#fce4ec
+    style C fill:#e0f7fa
+    style D fill:#fff8e1
+    style E fill:#e8f5e9
 ```
-Creator verifies identity (Iris ID)
-        ↓
-Clones voice/avatar (ElevenLabs/HeyGen)
-        ↓
-Content generated using their assets
-        ↓
-Revenue tracked per use ($0.03-0.20/1K chars)
-        ↓
-UCI payment distributed (Stripe Connect, weekly)
-```
+
+> [!NOTE]
+> Revenue is tracked per use at $0.03-0.20 per 1K characters, paid weekly via Stripe Connect.
 
 ### UCI Tiers:
 
@@ -373,7 +439,7 @@ UCI payment distributed (Stripe Connect, weekly)
 
 ---
 
-## Multi-Vertical Blog Engine Project
+## 📝 Multi-Vertical Blog Engine Project
 
 ### Project Links:
 
@@ -394,7 +460,7 @@ Health & Wellness, Business, Job Board, Music, World News, Art, Lifestyle
 
 ---
 
-## AI Model Routing
+## 🧠 AI Model Routing
 
 ### Cost-Optimized Selection:
 
@@ -415,9 +481,10 @@ Health & Wellness, Business, Job Board, Music, World News, Art, Lifestyle
 
 ---
 
-## Quality Gates
+## ✅ Quality Gates
 
-Every generated article must pass:
+> [!IMPORTANT]
+> Every generated article must pass these checks before publishing:
 
 - [ ] Primary keyword in title, first paragraph, H2, SEO title, meta description
 - [ ] Source badge in opening paragraph
@@ -432,7 +499,7 @@ Every generated article must pass:
 
 ---
 
-## Verification Schedule
+## 📅 Verification Schedule
 
 | Resource        | Frequency | Last Verified | Next Due   |
 | --------------- | --------- | ------------- | ---------- |
@@ -443,8 +510,15 @@ Every generated article must pass:
 
 ---
 
-## Contact
+## 📞 Contact
 
-- **Owner**: Jeff Liu
-- **Repository**: https://github.com/jliu-trendingsociety/ts-prompt-library
-- **Team**: Trending Society
+| Role | Info |
+|------|------|
+| **Owner** | Jeff Liu |
+| **Repository** | [ts-prompt-library](https://github.com/jliu-trendingsociety/ts-prompt-library) |
+| **Team** | Trending Society |
+
+---
+
+> [!TIP]
+> Use this file as a reference when working with the Trending Society ecosystem. Keep it synced with Notion and Linear.

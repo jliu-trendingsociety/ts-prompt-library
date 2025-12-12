@@ -21,6 +21,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.5.0] - 2025-12-12
+
+### Enhanced
+
+- UI/UX improvements across all documentation files
+- Emoji headers for better visual scanning in `.cursorrules`, `SYNC_STATUS.md`
+- Collapsible `<details>` sections for external resource links
+- Mermaid diagrams for:
+  - Upskilling pathway (Intern → Creator Commerce)
+  - UCI revenue flow
+- GitHub-flavored callout boxes (`[!NOTE]`, `[!TIP]`, `[!IMPORTANT]`)
+- Quick navigation table in `.cursorrules`
+- Updated `media/video/script-templates.md` to December 2025
+- Enhanced Notion page with emoji icons and callout blocks
+
+---
+
 ## [2.4.0] - 2025-12-12
 
 ### Added
@@ -187,6 +204,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 | Version | Date       | Highlights                                                   |
 | ------- | ---------- | ------------------------------------------------------------ |
+| 2.5.0   | 2025-12-12 | UI/UX improvements, emoji headers, Mermaid diagrams          |
 | 2.4.0   | 2025-12-12 | Newspaper Theme, Airtable Ops, Iris ID, UCI infrastructure   |
 | 2.3.0   | 2025-12-12 | AI Video tools: HeyGen, Pollo.ai, Decart AI, + 5 more        |
 | 2.2.0   | 2025-12-12 | Multi-Vertical Blog Engine, 12 verticals, Notion/Linear sync |
