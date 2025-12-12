@@ -67,14 +67,29 @@
 
 ## Integration Status
 
-| Integration       | GitHub | Notion | Linear Issue | API Docs Linked |
-| ----------------- | :----: | :----: | ------------ | --------------- |
-| Shopify Admin API |   ✅   |   ✅   | TRE-32       | ✅              |
-| Innoreader RSS    |   🔲   |   ✅   | TRE-36       | ✅              |
-| ElevenLabs Voice  |   🔲   |   ✅   | TRE-46       | ✅              |
-| Polymarket API    |   🔲   |   ✅   | TRE-45       | ✅              |
-| WordPress REST    |   🔲   |   ✅   | -            | 🔲              |
-| Webflow CMS       |   🔲   |   ✅   | -            | 🔲              |
+| Integration       | GitHub | Notion | Linear Issue | API Docs Linked | URL |
+| ----------------- | :----: | :----: | ------------ | --------------- | --- |
+| Shopify Admin API |   ✅   |   ✅   | TRE-32       | ✅              | [shopify.dev](https://shopify.dev/docs/api/admin-rest) |
+| Innoreader RSS    |   ✅   |   ✅   | TRE-36       | ✅              | [innoreader.com](https://www.innoreader.com) |
+| ElevenLabs Voice  |   🔲   |   ✅   | TRE-46       | ✅              | [elevenlabs.io](https://elevenlabs.io/creators) |
+| Polymarket API    |   🔲   |   ✅   | TRE-45       | ✅              | [docs.polymarket.com](https://docs.polymarket.com) |
+| WordPress REST    |   🔲   |   ✅   | -            | 🔲              | [developer.wordpress.org](https://developer.wordpress.org/rest-api/) |
+| Webflow CMS       |   🔲   |   ✅   | -            | 🔲              | [developers.webflow.com](https://developers.webflow.com) |
+
+---
+
+## AI Video Generation Tools
+
+| Tool       | GitHub | Notion | Linear Issue | API Docs | URL |
+| ---------- | :----: | :----: | ------------ | :------: | --- |
+| HeyGen     |   ✅   |   🔲   | TRE-39/47    | ✅       | [heygen.com](https://www.heygen.com) |
+| Pollo.ai   |   ✅   |   🔲   | TRE-39       | ✅       | [pollo.ai](https://pollo.ai/api-platform/explore) |
+| Decart AI  |   ✅   |   🔲   | TRE-39       | ✅       | [platform.decart.ai](https://platform.decart.ai) |
+| Runway     |   ✅   |   🔲   | TRE-39       | ✅       | [runwayml.com](https://runwayml.com) |
+| Pika       |   ✅   |   🔲   | TRE-39       | 🔲       | [pika.art](https://pika.art) |
+| Synthesia  |   ✅   |   🔲   | TRE-39       | ✅       | [synthesia.io](https://www.synthesia.io) |
+| Lumen5     |   ✅   |   🔲   | TRE-39       | 🔲       | [lumen5.com](https://lumen5.com) |
+| Opus Clip  |   ✅   |   🔲   | TRE-39       | 🔲       | [opus.pro](https://www.opus.pro) |
 
 ---
 
@@ -111,7 +126,18 @@
 
 ## Sync Changelog
 
-### 2025-12-12
+### 2025-12-12 (Update 2)
+
+- ✅ Added AI Video Generation tools to `.cursorrules`
+  - HeyGen: https://www.heygen.com
+  - Pollo.ai: https://pollo.ai/api-platform/explore
+  - Decart AI: https://platform.decart.ai
+  - Runway, Pika, Synthesia, Lumen5, Opus Clip
+- ✅ Expanded Innoreader section with full API links
+- ✅ Updated Linear TRE-39 with video tool matrix
+- ✅ Updated Notion with video generation pipeline
+
+### 2025-12-12 (Initial)
 
 - ✅ Created `.cursorrules` file with best practices
 - ✅ Created `SYNC_STATUS.md` tracking file
@@ -132,3 +158,6 @@
 3. [ ] Create Innoreader feed configuration files
 4. [ ] Create ElevenLabs integration workflow
 5. [ ] Create Polymarket API integration workflow
+6. [ ] Update Notion with video generation tools matrix
+7. [ ] Create HeyGen avatar integration workflow
+8. [ ] Create Decart AI lip-sync + ElevenLabs pipeline

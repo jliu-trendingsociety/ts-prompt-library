@@ -16,6 +16,33 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - ElevenLabs voice integration workflows
 - Polymarket API integration workflows
 - WordPress/Webflow/Next.js publishing adapters
+- HeyGen avatar integration (12 vertical-specific avatars)
+- Decart AI lip-sync + ElevenLabs pipeline
+
+---
+
+## [2.3.0] - 2025-12-12
+
+### Added
+
+- AI Video Generation tools to `.cursorrules`:
+  - HeyGen: https://www.heygen.com (AI avatars, talking heads)
+  - Pollo.ai: https://pollo.ai/api-platform/explore (fast video gen, batch processing)
+  - Decart AI: https://platform.decart.ai (real-time video, LipSync Live)
+  - Runway: https://runwayml.com (cinematic clips)
+  - Pika: https://pika.art (motion graphics)
+  - Synthesia: https://www.synthesia.io (enterprise avatars)
+  - Lumen5: https://lumen5.com (slideshows)
+  - Opus Clip: https://www.opus.pro (podcast clips)
+- Expanded Innoreader section with full API docs: https://developer.innoreader.com
+- AI Video Generation Tools section to SYNC_STATUS.md
+- Linear TRE-47: Integrate HeyGen AI Avatar video generation
+
+### Updated
+
+- Linear TRE-39: Comprehensive video tool matrix with all 8 tools
+- Notion page with AI Video Generation Pipeline section
+- `.cursorrules` version to 1.1.0
 
 ---
 
@@ -133,6 +160,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 | Version | Date       | Highlights                                                   |
 | ------- | ---------- | ------------------------------------------------------------ |
+| 2.3.0   | 2025-12-12 | AI Video tools: HeyGen, Pollo.ai, Decart AI, + 5 more        |
 | 2.2.0   | 2025-12-12 | Multi-Vertical Blog Engine, 12 verticals, Notion/Linear sync |
 | 2.1.0   | 2025-12-06 | Enterprise features, v5.1 prompt, cost optimization          |
 | 2.0.0   | 2025-11-15 | Modular restructure, v5 prompt                               |
