@@ -73,27 +73,27 @@
 
 ## Integration Status
 
-| Integration       | GitHub | Notion | Linear Issue | API Docs Linked | URL                                                                  |
-| ----------------- | :----: | :----: | ------------ | --------------- | -------------------------------------------------------------------- |
-| Shopify Admin API |   ✅   |   ✅   | TRE-32       | ✅              | [shopify.dev](https://shopify.dev/docs/api/admin-rest)               |
-| Innoreader RSS    |   ✅   |   ✅   | TRE-36       | ✅              | [innoreader.com](https://www.innoreader.com)                         |
-| ElevenLabs Voice  |   🔲   |   ✅   | TRE-46       | ✅              | [elevenlabs.io](https://elevenlabs.io/creators)                      |
-| Polymarket API    |   🔲   |   ✅   | TRE-45       | ✅              | [docs.polymarket.com](https://docs.polymarket.com)                   |
-| WordPress REST    |   🔲   |   ✅   | -            | 🔲              | [developer.wordpress.org](https://developer.wordpress.org/rest-api/) |
-| Webflow CMS       |   🔲   |   ✅   | -            | 🔲              | [developers.webflow.com](https://developers.webflow.com)             |
+| Integration       | GitHub | Notion | Linear Issue | API Docs Linked | URL                                                                                                 |
+| ----------------- | :----: | :----: | ------------ | --------------- | --------------------------------------------------------------------------------------------------- |
+| Shopify Admin API |   ✅   |   ✅   | TRE-32       | ✅              | [shopify.dev](https://shopify.dev/docs/api/admin-rest)                                              |
+| Innoreader RSS    |   ✅   |   ✅   | TRE-36       | ✅              | [innoreader.com](https://www.innoreader.com)                                                        |
+| ElevenLabs Voice  |   🔲   |   ✅   | TRE-46       | ✅              | [elevenlabs.io](https://elevenlabs.io/creators)                                                     |
+| Polymarket API    |   🔲   |   ✅   | TRE-45       | ✅              | [docs.polymarket.com](https://docs.polymarket.com)                                                  |
+| WordPress REST    |   🔲   |   ✅   | -            | 🔲              | [developer.wordpress.org](https://developer.wordpress.org/rest-api/)                                |
+| Webflow CMS       |   🔲   |   ✅   | -            | 🔲              | [developers.webflow.com](https://developers.webflow.com)                                            |
 | Newspaper Theme   |   ✅   |   ✅   | -            | ✅              | [tagdiv.com](https://demo.tagdiv.com/select_demo/newspaper-prebuilt-websites/?demo-type=membership) |
-| Airtable          |   ✅   |   ✅   | TRE-48       | ✅              | [airtable.com](https://airtable.com)                                 |
+| Airtable          |   ✅   |   ✅   | TRE-48       | ✅              | [airtable.com](https://airtable.com)                                                                |
 
 ---
 
 ## Creator Economy Infrastructure
 
-| Component         | GitHub | Notion | Linear Issue | Status | URL |
-| ----------------- | :----: | :----: | ------------ | :----: | --- |
-| Iris ID           |   ✅   |   ✅   | TRE-49       |   🔲   | TBD - Vendor selection needed |
-| UCI (Universal Creative Income) |   ✅   |   ✅   | TRE-50 |   🔲   | TBD - Stripe Connect |
-| Airtable QA Ops   |   ✅   |   ✅   | TRE-48       |   🔲   | [airtable.com](https://airtable.com) |
-| Creator Commerce Protocol |   ✅   |  N/A   | Project   |   ✅   | [Linear](https://linear.app/trending-society/project/creator-commerce-protocol-cb9281292cf1) |
+| Component                       | GitHub | Notion | Linear Issue | Status | URL                                                                                          |
+| ------------------------------- | :----: | :----: | ------------ | :----: | -------------------------------------------------------------------------------------------- |
+| Iris ID                         |   ✅   |   ✅   | TRE-49       |   🔲   | TBD - Vendor selection needed                                                                |
+| UCI (Universal Creative Income) |   ✅   |   ✅   | TRE-50       |   🔲   | TBD - Stripe Connect                                                                         |
+| Airtable QA Ops                 |   ✅   |   ✅   | TRE-48       |   🔲   | [airtable.com](https://airtable.com)                                                         |
+| Creator Commerce Protocol       |   ✅   |  N/A   | Project      |   ✅   | [Linear](https://linear.app/trending-society/project/creator-commerce-protocol-cb9281292cf1) |
 
 ---
 
