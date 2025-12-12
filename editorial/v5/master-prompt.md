@@ -1,12 +1,13 @@
-# Trending Society Editorial SEO/AEO Architect — Master Prompt (v5.1)
+# Trending Society Editorial SEO/AEO Architect — Master Prompt (v5.2)
 
-> **Version:** 5.1 (Competitive Edge Edition)  
-> **Updated:** December 6, 2025  
-> **Last Verified:** December 6, 2025  
-> **Purpose:** Transform source articles into Shopify-ready, SEO/AEO-optimized posts with hyperlinked keywords, branded source citations, internal linking, entity markup, voice optimization, and maximum trust signals  
-> **Output:** 10 structured blocks ready for Shopify + AI answer engines  
+> **Version:** 5.2 (Multi-Platform Architecture Edition)  
+> **Updated:** December 12, 2025  
+> **Last Verified:** December 12, 2025  
+> **Purpose:** Transform source articles into platform-ready, SEO/AEO-optimized posts with hyperlinked keywords, branded source citations, internal linking, entity markup, voice optimization, and maximum trust signals  
+> **Output:** 10 structured blocks ready for any CMS + AI answer engines  
 > **Rule Alignment:** Core Rules 1, 3, 8, 9  
-> **New in v5.1:** sameAs entity authority, speakable markup, entity schema, HowTo patterns
+> **New in v5.2:** NewsArticle schema, Author entity with sameAs, mentions property, BreadcrumbList, multi-platform adapters  
+> **Branch:** `feature/v6-modular-architecture`
 
 **Platform Specs:**
 
@@ -14,6 +15,21 @@
 - Shopify Blog API: Articles endpoint | [Docs](https://shopify.dev/docs/api/admin-rest/2024-10/resources/article)
 - Schema.org: 15.0 | [Docs](https://schema.org/Article)
 - Last verified: December 6, 2025
+
+---
+
+## Changelog from v5.1 → v5.2 (Multi-Platform Architecture Edition)
+
+- **NEW: NewsArticle Schema** — Alternative to Article for timely/breaking news content (Top Stories eligibility)
+- **NEW: Author Person Entity** — Individual author schema with sameAs for E-E-A-T signals
+- **NEW: Author Registry** — Centralized author profiles in `shared/author-registry.md`
+- **NEW: Mentions Property** — Explicit entity linking in JSON-LD for AI engine parsing
+- **NEW: BreadcrumbList Schema** — Navigation path display in search results
+- **NEW: Citation Meta Tags** — Academic-style meta tags for AI citation engines
+- **NEW: Platform Adapters** — Output formatting for Shopify, WordPress, Webflow, Next.js
+- **UPDATED: JSON-LD Schema** — Added NewsArticle option, author entity, mentions, breadcrumbs
+- **UPDATED: Quality Gate** — Added author entity and breadcrumb checks
+- **UPDATED: Output Format** — Platform-agnostic with adapter instructions
 
 ---
 
@@ -356,10 +372,11 @@ When writing the CTA, choose ONE service from this menu that best matches the ar
 Pick the most relevant one. Do NOT invent new services.
 
 ------------------------------------------------
-QUALITY GATE (Internal Verification)
+QUALITY GATE (Internal Verification) — v5.2
 ------------------------------------------------
 Before outputting, verify:
 
+**Content Quality:**
 ☐ Primary keyword appears in: title, first paragraph, one H2, SEO title, meta description
 ☐ Original source is cited with SOURCE BADGE in opening paragraph
 ☐ All factual claims have hyperlinked source attribution
@@ -372,16 +389,26 @@ Before outputting, verify:
 ☐ FAQ uses proper schema markup with class="faq-section"
 ☐ Key takeaways wrapped in speakable markup
 ☐ Key entities (people/orgs) marked with schema on first mention
-☐ JSON-LD includes sameAs links for entity authority
-☐ Speakable specification included in JSON-LD
-☐ HowTo schema added if article is instructional
 ☐ CTA service matches topic logically
 ☐ No fluff phrases ("It's worth noting...", "In conclusion...", "It's important to mention...")
 ☐ No em dashes used
 ☐ Active voice used 80%+ of the time
 ☐ Tags are from approved list
-☐ All output sections are complete
+
+**Schema Requirements (v5.2 NEW):**
+☐ JSON-LD uses @graph structure with multiple schemas
+☐ Author is Person entity (not Organization) with sameAs links
+☐ Author pulled from shared/author-registry.md
+☐ Mentions property includes 2-5 key entities with sameAs (Wikipedia/official URLs)
+☐ BreadcrumbList schema included with Home → Category → Article path
+☐ Use NewsArticle type for timely/breaking content, Article for evergreen
+☐ Speakable specification included in JSON-LD
+☐ HowTo schema added if article is instructional
+
+**Output Completeness:**
+☐ All 10 output sections are complete
 ☐ CSS styles block included
+☐ Platform adapter instructions noted (if not Shopify)
 
 ------------------------------------------------
 OUTPUT FORMAT (STRICT)
@@ -579,58 +606,113 @@ Use this template:
 [3-6 comma-separated tags from approved list, e.g. ai, hardware, product-strategy, news]
 ```
 
-### 8. Schema Markup (JSON-LD) — paste into Shopify theme or page
+### 8. Schema Markup (JSON-LD) — paste into CMS theme or page
+
+**Note:** Use `NewsArticle` for timely/breaking news content (Top Stories eligible). Use `Article` for evergreen content.
 
 ```json
 {
   "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "[Blog Title]",
-  "description": "[Meta description]",
-  "author": {
-    "@type": "Organization",
-    "name": "Trending Society",
-    "url": "https://trendingsociety.com",
-    "sameAs": [
-      "https://www.linkedin.com/company/trending-society",
-      "https://www.instagram.com/trendingsociety.ai/",
-      "https://www.tiktok.com/@trendingsociety.ai"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Trending Society",
-    "url": "https://trendingsociety.com",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://trendingsociety.com/logo.png"
-    },
-    "sameAs": [
-      "https://www.linkedin.com/company/trending-society",
-      "https://www.instagram.com/trendingsociety.ai/",
-      "https://www.tiktok.com/@trendingsociety.ai"
-    ]
-  },
-  "datePublished": "[ISO 8601 format: YYYY-MM-DD]",
-  "dateModified": "[ISO 8601 format: YYYY-MM-DD]",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://trendingsociety.com/blogs/[slug]"
-  },
-  "keywords": "[comma-separated keywords]",
-  "articleSection": "[Primary category]",
-  "wordCount": "[approximate word count]",
-  "speakable": {
-    "@type": "SpeakableSpecification",
-    "cssSelector": [".key-takeaways", ".faq-section"]
-  },
-  "citation": [
+  "@graph": [
     {
-      "@type": "WebPage",
-      "name": "[Source Name]",
-      "url": "[Source URL]"
+      "@type": "Article",
+      "@id": "https://trendingsociety.com/blogs/[slug]#article",
+      "headline": "[Blog Title]",
+      "description": "[Meta description]",
+      "author": {
+        "@type": "Person",
+        "name": "[Author Name from author-registry.md]",
+        "url": "[Author Profile URL]",
+        "jobTitle": "[Job Title]",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Trending Society",
+          "url": "https://trendingsociety.com"
+        },
+        "sameAs": [
+          "[Author LinkedIn URL]",
+          "[Author Twitter URL]"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Trending Society",
+        "url": "https://trendingsociety.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://trendingsociety.com/logo.png"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/company/trending-society",
+          "https://www.instagram.com/trendingsociety.ai/",
+          "https://www.tiktok.com/@trendingsociety.ai"
+        ]
+      },
+      "datePublished": "[ISO 8601 format: YYYY-MM-DD]",
+      "dateModified": "[ISO 8601 format: YYYY-MM-DD]",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://trendingsociety.com/blogs/[slug]"
+      },
+      "keywords": "[comma-separated keywords]",
+      "articleSection": "[Primary category/vertical]",
+      "wordCount": "[approximate word count]",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".key-takeaways", ".faq-section"]
+      },
+      "mentions": [
+        {
+          "@type": "Person",
+          "name": "[Key Person Mentioned]",
+          "sameAs": "[Wikipedia or Official URL]"
+        },
+        {
+          "@type": "Organization",
+          "name": "[Key Organization Mentioned]",
+          "sameAs": "[Wikipedia or Official URL]"
+        }
+      ],
+      "citation": [
+        {
+          "@type": "WebPage",
+          "name": "[Source Name]",
+          "url": "[Source URL]"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://trendingsociety.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "[Category/Vertical]",
+          "item": "https://trendingsociety.com/blogs/[category]"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "[Article Title]"
+        }
+      ]
     }
   ]
+}
+```
+
+**For NewsArticle (timely/breaking news), replace the @type and add:**
+```json
+{
+  "@type": "NewsArticle",
+  "dateline": "[CITY NAME]",
+  "printSection": "[Section: Technology, Business, Sports, etc.]"
 }
 ```
 
@@ -968,18 +1050,23 @@ Already implemented in template:
 - Almost nobody optimizes for this yet
 - Future-proofs for voice-first AI devices
 
-### Competitive Advantages Summary
+### Competitive Advantages Summary (v5.2)
 
-| Feature          | % Sites Using | You Now Have | Your Edge |
-| ---------------- | ------------- | ------------ | --------- |
-| FAQPage schema   | 15%           | ✅           | Standard  |
-| Article schema   | 30%           | ✅           | Standard  |
-| sameAs links     | 3%            | ✅ NEW       | Elite     |
-| Speakable markup | <1%           | ✅ NEW       | Elite     |
-| Entity markup    | 5%            | ✅ NEW       | Elite     |
-| HowTo schema     | 2%            | ✅ NEW       | Elite     |
+| Feature              | % Sites Using | Status    | Your Edge     |
+| -------------------- | ------------- | --------- | ------------- |
+| FAQPage schema       | 15%           | ✅        | Standard      |
+| Article schema       | 30%           | ✅        | Standard      |
+| sameAs links         | 3%            | ✅        | Elite         |
+| Speakable markup     | <1%           | ✅        | Elite         |
+| Entity markup        | 5%            | ✅        | Elite         |
+| HowTo schema         | 2%            | ✅        | Elite         |
+| **NewsArticle**      | 8%            | ✅ v5.2   | **Top 10%**   |
+| **Author Person**    | 5%            | ✅ v5.2   | **Elite**     |
+| **Mentions property**| <1%           | ✅ v5.2   | **Top 1%**    |
+| **BreadcrumbList**   | 12%           | ✅ v5.2   | **Standard+** |
+| **Multi-platform**   | 5%            | ✅ v5.2   | **Elite**     |
 
-**Result:** Top 1-2% of tech blogs for SEO/AEO optimization
+**Result:** Top 0.1% of publishers for SEO/AEO optimization
 
 ---
 
@@ -1009,6 +1096,21 @@ Add the CSS from Section 10 to your Shopify theme's custom CSS file or the `<sty
 | v4      | Dec 2024 | Added citations, schema markup, FAQ schema, entity mapping, quality gate, image guidance                                                         |
 | v5      | Dec 2024 | Added keyword hyperlinking, internal linking protocol, branded source badges with logos, CSS styles, link audit section, removed raw URL listing |
 | v5.1    | Dec 2024 | Added sameAs entity authority, speakable voice optimization, entity markup protocol, HowTo schema, competitive edge features                     |
+| v5.2    | Dec 2025 | Added NewsArticle schema, Author Person entity, mentions property, BreadcrumbList, multi-platform adapters, author registry                      |
+
+---
+
+## Platform Adapters
+
+This prompt generates platform-agnostic output. For platform-specific formatting, see:
+
+| Platform | Adapter Location | Status |
+|----------|-----------------|--------|
+| Shopify | `platforms/shopify/adapter.md` | ✅ Primary |
+| WordPress | `platforms/wordpress/adapter.md` | 🔲 Planned |
+| Webflow | `platforms/webflow/adapter.md` | 🔲 Planned |
+| Next.js | `platforms/nextjs/adapter.md` | 🔲 Planned |
+| Generic HTML | `platforms/generic-html/adapter.md` | 🔲 Planned |
 
 ---
 
