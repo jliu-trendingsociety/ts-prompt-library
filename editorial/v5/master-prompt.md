@@ -6,8 +6,7 @@
 > **Purpose:** Transform source articles into platform-ready, SEO/AEO-optimized posts with hyperlinked keywords, branded source citations, internal linking, entity markup, voice optimization, and maximum trust signals  
 > **Output:** 10 structured blocks ready for any CMS + AI answer engines  
 > **Rule Alignment:** Core Rules 1, 3, 8, 9  
-> **New in v5.2:** NewsArticle schema, Author entity with sameAs, mentions property, BreadcrumbList, multi-platform adapters  
-> **Branch:** `feature/v6-modular-architecture`
+> **New in v5.2:** NewsArticle schema, Author entity with sameAs, mentions property, BreadcrumbList, multi-platform adapters
 
 **Platform Specs:**
 
@@ -340,7 +339,7 @@ When writing the CTA, choose ONE service from this menu that best matches the ar
 **SERVICE MATCHING ALGORITHM** (see `core/engine/service-matching.md` for full spec)
 
 Step 1: DETECT VERTICAL from article content
-Step 2: EXTRACT TOPICS with confidence scores  
+Step 2: EXTRACT TOPICS with confidence scores
 Step 3: MATCH SERVICE using affinity matrix below
 
 | Vertical | Primary Service | Secondary Service |

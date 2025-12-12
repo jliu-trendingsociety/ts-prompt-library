@@ -25,21 +25,21 @@ OUTPUT: Primary vertical (1) + Secondary verticals (0-2)
 
 ### Vertical Detection Signals
 
-| Vertical | Primary Keywords | Entity Signals | Source Signals |
-|----------|-----------------|----------------|----------------|
-| **Tech** | AI, API, software, SaaS, startup, developer, code | OpenAI, Google, Microsoft, NVIDIA | TechCrunch, Verge, Wired |
-| **Sports** | game, team, player, score, championship, athlete | ESPN, NFL, NBA, FIFA | ESPN, Bleacher Report |
-| **Finance** | stock, market, trading, investment, crypto, bank | S&P, NASDAQ, Fed, SEC | Bloomberg, CNBC, WSJ |
-| **Entertainment** | movie, show, celebrity, streaming, music, album | Netflix, Spotify, Disney | Variety, Hollywood Reporter |
-| **Real Estate** | property, mortgage, home, listing, realtor | Zillow, Redfin, NAR | Realtor.com, Curbed |
-| **Gaming** | game, console, esports, streaming, PC, mobile | Steam, PlayStation, Xbox | IGN, Kotaku, Polygon |
-| **Health** | wellness, fitness, medical, supplement, diet | FDA, CDC, WHO | WebMD, Healthline |
-| **Business** | company, revenue, management, strategy, growth | Fortune 500, LinkedIn | Forbes, Inc, Fast Company |
-| **Job Board** | hiring, career, salary, remote, job, interview | LinkedIn, Indeed | Glassdoor, LinkedIn News |
-| **Music** | artist, album, tour, streaming, concert | Spotify, Billboard, Grammy | Pitchfork, Billboard |
-| **World News** | government, policy, international, election | UN, EU, governments | Reuters, AP, BBC |
-| **Art** | gallery, artist, exhibition, NFT, design | MoMA, Christie's, Sotheby's | Artnet, Artsy |
-| **Lifestyle** | travel, fashion, food, home, wellness | Vogue, Condé Nast | Eater, Bon Appétit |
+| Vertical          | Primary Keywords                                  | Entity Signals                    | Source Signals              |
+| ----------------- | ------------------------------------------------- | --------------------------------- | --------------------------- |
+| **Tech**          | AI, API, software, SaaS, startup, developer, code | OpenAI, Google, Microsoft, NVIDIA | TechCrunch, Verge, Wired    |
+| **Sports**        | game, team, player, score, championship, athlete  | ESPN, NFL, NBA, FIFA              | ESPN, Bleacher Report       |
+| **Finance**       | stock, market, trading, investment, crypto, bank  | S&P, NASDAQ, Fed, SEC             | Bloomberg, CNBC, WSJ        |
+| **Entertainment** | movie, show, celebrity, streaming, music, album   | Netflix, Spotify, Disney          | Variety, Hollywood Reporter |
+| **Real Estate**   | property, mortgage, home, listing, realtor        | Zillow, Redfin, NAR               | Realtor.com, Curbed         |
+| **Gaming**        | game, console, esports, streaming, PC, mobile     | Steam, PlayStation, Xbox          | IGN, Kotaku, Polygon        |
+| **Health**        | wellness, fitness, medical, supplement, diet      | FDA, CDC, WHO                     | WebMD, Healthline           |
+| **Business**      | company, revenue, management, strategy, growth    | Fortune 500, LinkedIn             | Forbes, Inc, Fast Company   |
+| **Job Board**     | hiring, career, salary, remote, job, interview    | LinkedIn, Indeed                  | Glassdoor, LinkedIn News    |
+| **Music**         | artist, album, tour, streaming, concert           | Spotify, Billboard, Grammy        | Pitchfork, Billboard        |
+| **World News**    | government, policy, international, election       | UN, EU, governments               | Reuters, AP, BBC            |
+| **Art**           | gallery, artist, exhibition, NFT, design          | MoMA, Christie's, Sotheby's       | Artnet, Artsy               |
+| **Lifestyle**     | travel, fashion, food, home, wellness             | Vogue, Condé Nast                 | Eater, Bon Appétit          |
 
 ---
 
@@ -51,9 +51,9 @@ Extract specific topic signals within the vertical:
 {
   "vertical": "tech",
   "topics": [
-    {"topic": "ai_agents", "confidence": 0.92},
-    {"topic": "automation", "confidence": 0.85},
-    {"topic": "saas", "confidence": 0.45}
+    { "topic": "ai_agents", "confidence": 0.92 },
+    { "topic": "automation", "confidence": 0.85 },
+    { "topic": "saas", "confidence": 0.45 }
   ]
 }
 ```
@@ -63,41 +63,41 @@ Extract specific topic signals within the vertical:
 <details>
 <summary><strong>Tech Topics</strong></summary>
 
-| Topic ID | Keywords | Service Match |
-|----------|----------|---------------|
-| `ai_agents` | GPT, LLM, copilot, agent, ChatGPT, Claude, AI assistant | Custom GPT Development |
-| `automation` | workflow, n8n, Zapier, automate, integrate, API | Business Automation Workflows |
-| `ecommerce` | Shopify, store, product, commerce, checkout | Social Commerce & Shopify |
-| `seo_content` | SEO, search, ranking, traffic, organic | SEO & GEO Optimization |
-| `social_media` | distribution, posting, scheduling, content | Social Media Automation |
-| `software_dev` | build, code, app, platform, infrastructure | Custom Software Builds |
-| `saas` | subscription, recurring, platform, product | SaaS Apps |
-| `branding` | logo, identity, rebrand, design system | Logo & Brand Design |
+| Topic ID       | Keywords                                                | Service Match                 |
+| -------------- | ------------------------------------------------------- | ----------------------------- |
+| `ai_agents`    | GPT, LLM, copilot, agent, ChatGPT, Claude, AI assistant | Custom GPT Development        |
+| `automation`   | workflow, n8n, Zapier, automate, integrate, API         | Business Automation Workflows |
+| `ecommerce`    | Shopify, store, product, commerce, checkout             | Social Commerce & Shopify     |
+| `seo_content`  | SEO, search, ranking, traffic, organic                  | SEO & GEO Optimization        |
+| `social_media` | distribution, posting, scheduling, content              | Social Media Automation       |
+| `software_dev` | build, code, app, platform, infrastructure              | Custom Software Builds        |
+| `saas`         | subscription, recurring, platform, product              | SaaS Apps                     |
+| `branding`     | logo, identity, rebrand, design system                  | Logo & Brand Design           |
 
 </details>
 
 <details>
 <summary><strong>Business Topics</strong></summary>
 
-| Topic ID | Keywords | Service Match |
-|----------|----------|---------------|
-| `ops_efficiency` | operations, efficiency, process, workflow | Business Automation Workflows |
-| `digital_transform` | digital, modernize, tech stack, tools | Custom Software Builds |
-| `marketing` | marketing, brand, campaigns, awareness | Social Media Automation |
-| `startup` | startup, funding, launch, MVP, product | SaaS Apps |
-| `local_business` | local, location, maps, discovery | SEO & GEO Optimization |
+| Topic ID            | Keywords                                  | Service Match                 |
+| ------------------- | ----------------------------------------- | ----------------------------- |
+| `ops_efficiency`    | operations, efficiency, process, workflow | Business Automation Workflows |
+| `digital_transform` | digital, modernize, tech stack, tools     | Custom Software Builds        |
+| `marketing`         | marketing, brand, campaigns, awareness    | Social Media Automation       |
+| `startup`           | startup, funding, launch, MVP, product    | SaaS Apps                     |
+| `local_business`    | local, location, maps, discovery          | SEO & GEO Optimization        |
 
 </details>
 
 <details>
 <summary><strong>Entertainment/Creator Topics</strong></summary>
 
-| Topic ID | Keywords | Service Match |
-|----------|----------|---------------|
+| Topic ID          | Keywords                               | Service Match             |
+| ----------------- | -------------------------------------- | ------------------------- |
 | `creator_economy` | creator, influencer, content, monetize | Social Commerce & Shopify |
-| `merch` | merchandise, store, products, fans | Social Commerce & Shopify |
-| `distribution` | clips, shorts, repurpose, cross-post | Social Media Automation |
-| `personal_brand` | personal brand, identity, presence | Logo & Brand Design |
+| `merch`           | merchandise, store, products, fans     | Social Commerce & Shopify |
+| `distribution`    | clips, shorts, repurpose, cross-post   | Social Media Automation   |
+| `personal_brand`  | personal brand, identity, presence     | Logo & Brand Design       |
 
 </details>
 
@@ -121,21 +121,21 @@ ALGORITHM:
 
 ### Vertical-Service Affinity Matrix
 
-| Vertical | Primary Service | Secondary Service | Tertiary Service |
-|----------|----------------|-------------------|------------------|
-| **Tech** | Custom GPT Development | Business Automation | Custom Software |
-| **Sports** | Social Media Automation | SEO & GEO | — |
-| **Finance** | Custom Software | Business Automation | SEO & GEO |
-| **Entertainment** | Social Commerce & Shopify | Social Media Automation | Logo & Brand |
-| **Real Estate** | SEO & GEO | Custom Software | — |
-| **Gaming** | Social Media Automation | Custom GPT Development | — |
-| **Health** | SEO & GEO | Social Media Automation | — |
-| **Business** | Business Automation | Custom Software | SaaS Apps |
-| **Job Board** | SEO & GEO | Social Media Automation | — |
-| **Music** | Social Commerce & Shopify | Social Media Automation | — |
-| **World News** | SEO & GEO | Social Media Automation | — |
-| **Art** | Social Commerce & Shopify | Logo & Brand | — |
-| **Lifestyle** | Social Commerce & Shopify | Social Media Automation | SEO & GEO |
+| Vertical          | Primary Service           | Secondary Service       | Tertiary Service |
+| ----------------- | ------------------------- | ----------------------- | ---------------- |
+| **Tech**          | Custom GPT Development    | Business Automation     | Custom Software  |
+| **Sports**        | Social Media Automation   | SEO & GEO               | —                |
+| **Finance**       | Custom Software           | Business Automation     | SEO & GEO        |
+| **Entertainment** | Social Commerce & Shopify | Social Media Automation | Logo & Brand     |
+| **Real Estate**   | SEO & GEO                 | Custom Software         | —                |
+| **Gaming**        | Social Media Automation   | Custom GPT Development  | —                |
+| **Health**        | SEO & GEO                 | Social Media Automation | —                |
+| **Business**      | Business Automation       | Custom Software         | SaaS Apps        |
+| **Job Board**     | SEO & GEO                 | Social Media Automation | —                |
+| **Music**         | Social Commerce & Shopify | Social Media Automation | —                |
+| **World News**    | SEO & GEO                 | Social Media Automation | —                |
+| **Art**           | Social Commerce & Shopify | Logo & Brand            | —                |
+| **Lifestyle**     | Social Commerce & Shopify | Social Media Automation | SEO & GEO        |
 
 ---
 
@@ -143,16 +143,16 @@ ALGORITHM:
 
 ### Digital Services Division Menu
 
-| ID | Service | URL | Best For |
-|----|---------|-----|----------|
-| 1 | Social Commerce & Shopify Builds | `/services/social-commerce-shopify-builds` | Creators, e-commerce, community commerce |
-| 2 | Business Automation Workflows | `/services/business-automation-workflows` | Ops efficiency, workflow automation |
-| 3 | Logo & Brand Design | `/services/logo-brand-design` | Visual identity, rebranding |
-| 4 | SEO & GEO Optimization | `/services/seo-geo-optimization` | Search visibility, local discovery |
-| 5 | Custom Software Builds | `/services/custom-software-builds` | Technical solutions, infrastructure |
-| 6 | Custom GPT Development | `/services/custom-gpt-development` | AI agents, LLMs, copilots |
-| 7 | Social Media Automation | `/services/social-media-automation` | Content distribution, scheduling |
-| 8 | SaaS Apps | `/services/saas-apps` | Product development, MVPs |
+| ID  | Service                          | URL                                        | Best For                                 |
+| --- | -------------------------------- | ------------------------------------------ | ---------------------------------------- |
+| 1   | Social Commerce & Shopify Builds | `/services/social-commerce-shopify-builds` | Creators, e-commerce, community commerce |
+| 2   | Business Automation Workflows    | `/services/business-automation-workflows`  | Ops efficiency, workflow automation      |
+| 3   | Logo & Brand Design              | `/services/logo-brand-design`              | Visual identity, rebranding              |
+| 4   | SEO & GEO Optimization           | `/services/seo-geo-optimization`           | Search visibility, local discovery       |
+| 5   | Custom Software Builds           | `/services/custom-software-builds`         | Technical solutions, infrastructure      |
+| 6   | Custom GPT Development           | `/services/custom-gpt-development`         | AI agents, LLMs, copilots                |
+| 7   | Social Media Automation          | `/services/social-media-automation`        | Content distribution, scheduling         |
+| 8   | SaaS Apps                        | `/services/saas-apps`                      | Product development, MVPs                |
 
 ---
 
@@ -161,23 +161,26 @@ ALGORITHM:
 ### Template by Match Type
 
 **High Confidence Match (>0.85):**
+
 ```markdown
-**Ready to [action verb] for your [industry/role]?** 
-Trending Society's [Service Name] helps [specific outcome]. 
+**Ready to [action verb] for your [industry/role]?**
+Trending Society's [Service Name] helps [specific outcome].
 [Learn more →](/services/[service-slug])
 ```
 
 **Medium Confidence Match (0.6-0.85):**
+
 ```markdown
-**Exploring [topic]?** 
-Our [Service Name] team can help you [benefit]. 
+**Exploring [topic]?**
+Our [Service Name] team can help you [benefit].
 [Get in touch →](/services/[service-slug])
 ```
 
 **Low Confidence / Default:**
+
 ```markdown
-**Need help with [general area]?** 
-Trending Society offers [Service Name] for [broad audience]. 
+**Need help with [general area]?**
+Trending Society offers [Service Name] for [broad audience].
 [See how →](/services/[service-slug])
 ```
 
@@ -203,14 +206,14 @@ function detectVerticalAndTopics(article) {
   const scores = {};
 
   for (const [vertical, keywords] of Object.entries(verticals)) {
-    scores[vertical] = keywords.filter(kw => content.includes(kw)).length;
+    scores[vertical] = keywords.filter((kw) => content.includes(kw)).length;
   }
 
   const sorted = Object.entries(scores).sort((a, b) => b[1] - a[1]);
   return {
     primary: sorted[0][0],
     secondary: sorted[1]?.[1] > 0 ? sorted[1][0] : null,
-    confidence: sorted[0][1] / 5 // Normalize to 0-1
+    confidence: sorted[0][1] / 5, // Normalize to 0-1
   };
 }
 ```
@@ -224,17 +227,20 @@ function matchService(vertical, topics) {
     tech: ['custom-gpt-development', 'business-automation-workflows'],
     sports: ['social-media-automation', 'seo-geo-optimization'],
     finance: ['custom-software-builds', 'business-automation-workflows'],
-    entertainment: ['social-commerce-shopify-builds', 'social-media-automation'],
+    entertainment: [
+      'social-commerce-shopify-builds',
+      'social-media-automation',
+    ],
     business: ['business-automation-workflows', 'custom-software-builds'],
     // ... other mappings
   };
 
   const services = affinityMatrix[vertical] || ['seo-geo-optimization'];
-  
+
   return {
     primary: services[0],
     secondary: services[1] || null,
-    url: `/services/${services[0]}`
+    url: `/services/${services[0]}`,
   };
 }
 ```
@@ -245,12 +251,12 @@ function matchService(vertical, topics) {
 
 Track these to optimize the algorithm:
 
-| Metric | Target | Purpose |
-|--------|--------|---------|
-| Vertical accuracy | >90% | Correct classification |
-| Service click-through | >2% | CTA relevance |
-| Service inquiry rate | >0.5% | Conversion quality |
-| Reader satisfaction | >4.0/5 | Non-intrusive positioning |
+| Metric                | Target | Purpose                   |
+| --------------------- | ------ | ------------------------- |
+| Vertical accuracy     | >90%   | Correct classification    |
+| Service click-through | >2%    | CTA relevance             |
+| Service inquiry rate  | >0.5%  | Conversion quality        |
+| Reader satisfaction   | >4.0/5 | Non-intrusive positioning |
 
 ---
 
