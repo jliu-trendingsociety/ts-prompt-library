@@ -25,6 +25,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 **Branch:** `feature/v6-modular-architecture`
 
 #### Core Engine Upgrade (v5.2)
+
 - NewsArticle schema for timely/breaking content (Top Stories eligible)
 - Author Person entity with sameAs links for E-E-A-T
 - `mentions` property for explicit entity linking
@@ -34,46 +35,51 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Now top 0.1% of publishers for SEO/AEO optimization
 
 #### Modular Architecture
+
 - New folder structure: `core/`, `platforms/`, `verticals/`, `api/`, `docs/`
 - Schema templates: `core/schemas/` (Article, NewsArticle, Video, Podcast)
 - Platform adapters: Shopify (ready), WordPress (ready), Webflow, Next.js
 - Vertical templates: Tech (base), Sports, Finance, Entertainment planned
 
 #### Platform Adapters (`/platforms/`)
+
 - Shopify adapter with API reference
 - WordPress adapter with Yoast SEO integration
 - Adapter interface specification
 - Multi-platform publishing support
 
 #### Backend Architecture
+
 - n8n workflow blueprints (`docs/n8n-workflows.md`)
 - Airtable data layer schema (`docs/airtable-schema.md`)
 - 6-table schema: Requests, Articles, Enrichments, Clients, Connections, Config
 - Webhook integration patterns
 
 #### API Specification
+
 - OpenAPI-style documentation (`api/README.md`)
 - Core endpoints: generate, publish, enrich, bulk
 - Webhook events and payloads
 - Rate limits by tier
 
 #### Documentation
+
 - Architecture overview (`docs/architecture.md`)
 - System diagrams and data flows
 - Scaling strategy (Validate → Revenue → Scale → SaaS)
 
 ### Linear Issues Created (TRE-51 to TRE-63)
 
-| Epic | Issues | Status |
-|------|--------|--------|
-| Core Engine v5.2 | TRE-51 to TRE-56 | ✅ Done |
-| Modular Architecture | TRE-60 | ✅ Done |
-| Platform Adapters | TRE-58 | 🔲 Ready |
-| Vertical Templates | TRE-59 | 🔲 Ready |
-| n8n Backend | TRE-57 | 🔲 Ready |
-| Airtable Data Layer | TRE-61 | 🔲 Ready |
-| API Specification | TRE-62 | 🔲 Ready |
-| Documentation | TRE-63 | 🔲 Ready |
+| Epic                 | Issues           | Status   |
+| -------------------- | ---------------- | -------- |
+| Core Engine v5.2     | TRE-51 to TRE-56 | ✅ Done  |
+| Modular Architecture | TRE-60           | ✅ Done  |
+| Platform Adapters    | TRE-58           | 🔲 Ready |
+| Vertical Templates   | TRE-59           | 🔲 Ready |
+| n8n Backend          | TRE-57           | 🔲 Ready |
+| Airtable Data Layer  | TRE-61           | 🔲 Ready |
+| API Specification    | TRE-62           | 🔲 Ready |
+| Documentation        | TRE-63           | 🔲 Ready |
 
 ---
 
@@ -258,16 +264,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Version History Summary
 
-| Version | Date       | Highlights                                                   |
-| ------- | ---------- | ------------------------------------------------------------ |
+| Version | Date       | Highlights                                                                    |
+| ------- | ---------- | ----------------------------------------------------------------------------- |
 | 3.0.0   | 2025-12-12 | **Multi-Platform Architecture**, v5.2 prompt, platform adapters, n8n/Airtable |
-| 2.5.0   | 2025-12-12 | UI/UX improvements, emoji headers, Mermaid diagrams          |
-| 2.4.0   | 2025-12-12 | Newspaper Theme, Airtable Ops, Iris ID, UCI infrastructure   |
-| 2.3.0   | 2025-12-12 | AI Video tools: HeyGen, Pollo.ai, Decart AI, + 5 more        |
-| 2.2.0   | 2025-12-12 | Multi-Vertical Blog Engine, 12 verticals, Notion/Linear sync |
-| 2.1.0   | 2025-12-06 | Enterprise features, v5.1 prompt, cost optimization          |
-| 2.0.0   | 2025-11-15 | Modular restructure, v5 prompt                               |
-| 1.0.0   | 2025-10-01 | Initial release                                              |
+| 2.5.0   | 2025-12-12 | UI/UX improvements, emoji headers, Mermaid diagrams                           |
+| 2.4.0   | 2025-12-12 | Newspaper Theme, Airtable Ops, Iris ID, UCI infrastructure                    |
+| 2.3.0   | 2025-12-12 | AI Video tools: HeyGen, Pollo.ai, Decart AI, + 5 more                         |
+| 2.2.0   | 2025-12-12 | Multi-Vertical Blog Engine, 12 verticals, Notion/Linear sync                  |
+| 2.1.0   | 2025-12-06 | Enterprise features, v5.1 prompt, cost optimization                           |
+| 2.0.0   | 2025-11-15 | Modular restructure, v5 prompt                                                |
+| 1.0.0   | 2025-10-01 | Initial release                                                               |
 
 ---
 

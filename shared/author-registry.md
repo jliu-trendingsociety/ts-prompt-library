@@ -9,6 +9,7 @@
 ## Overview
 
 This registry contains author profiles for use in JSON-LD schema markup. Each author includes:
+
 - Personal identifiers and role
 - Social/professional profile links (sameAs)
 - Areas of expertise (verticals)
@@ -20,24 +21,23 @@ This registry contains author profiles for use in JSON-LD schema markup. Each au
 
 ### Jeff Liu
 
-| Field | Value |
-|-------|-------|
-| **Name** | Jeff Liu |
-| **Title** | Founder & CEO |
-| **Organization** | Trending Society |
-| **URL** | `https://trendingsociety.com/team/jeff-liu` |
-| **Photo** | `https://trendingsociety.com/images/authors/jeff-liu.jpg` |
-| **Expertise** | Tech, AI, Business, Automation |
+| Field            | Value                                                     |
+| ---------------- | --------------------------------------------------------- |
+| **Name**         | Jeff Liu                                                  |
+| **Title**        | Founder & CEO                                             |
+| **Organization** | Trending Society                                          |
+| **URL**          | `https://trendingsociety.com/team/jeff-liu`               |
+| **Photo**        | `https://trendingsociety.com/images/authors/jeff-liu.jpg` |
+| **Expertise**    | Tech, AI, Business, Automation                            |
 
 **sameAs Links:**
+
 ```json
-[
-  "https://linkedin.com/in/jeffliu",
-  "https://twitter.com/jeffliu"
-]
+["https://linkedin.com/in/jeffliu", "https://twitter.com/jeffliu"]
 ```
 
 **Bio:**
+
 > Jeff Liu is the Founder and CEO of Trending Society, an AI-native digital agency specializing in automation, content systems, and social commerce. He writes about emerging technology, AI tools, and the future of digital work.
 
 ---
@@ -59,10 +59,7 @@ Use this template when generating author schema in articles:
       "name": "Trending Society",
       "url": "https://trendingsociety.com"
     },
-    "sameAs": [
-      "[LinkedIn URL]",
-      "[Twitter URL]"
-    ],
+    "sameAs": ["[LinkedIn URL]", "[Twitter URL]"],
     "description": "[Short bio]"
   }
 }
@@ -95,13 +92,13 @@ When adding a new author, include:
 
 ## Why Author Attribution Matters
 
-| Benefit | Impact |
-|---------|--------|
-| **E-E-A-T Signals** | Google's ranking factor for expertise and trust |
-| **AI Citation** | LLMs cite sources with clear authorship more often |
-| **Knowledge Graph** | Builds author entity in Google's knowledge graph |
-| **Brand Authority** | Associates quality content with named experts |
+| Benefit             | Impact                                             |
+| ------------------- | -------------------------------------------------- |
+| **E-E-A-T Signals** | Google's ranking factor for expertise and trust    |
+| **AI Citation**     | LLMs cite sources with clear authorship more often |
+| **Knowledge Graph** | Builds author entity in Google's knowledge graph   |
+| **Brand Authority** | Associates quality content with named experts      |
 
 ---
 
-*Registry maintained by Trending Society*
+_Registry maintained by Trending Society_

@@ -71,7 +71,8 @@
           {
             "@type": "ListItem",
             "position": 3,
-            "name": "{{title}}"
+            "name": "{{title}}",
+            "item": "{{site_url}}/blogs/{{slug}}"
           }
         ]
       }

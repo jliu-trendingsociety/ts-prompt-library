@@ -18,13 +18,13 @@ Core Engine Output → Platform Adapter → CMS-Ready Content
 
 ## Supported Platforms
 
-| Platform | Status | Adapter | API Docs |
-|----------|--------|---------|----------|
-| Shopify | ✅ Primary | `shopify/adapter.md` | [Shopify Blog API](https://shopify.dev/docs/api/admin-rest/2024-10/resources/article) |
-| WordPress | 🔲 Ready | `wordpress/adapter.md` | [WP REST API](https://developer.wordpress.org/rest-api/) |
-| Webflow | 🔲 Ready | `webflow/adapter.md` | [Webflow CMS API](https://developers.webflow.com/) |
-| Next.js | 🔲 Ready | `nextjs/adapter.md` | MDX + Frontmatter |
-| Generic HTML | 🔲 Ready | `generic-html/adapter.md` | Any CMS |
+| Platform     | Status     | Adapter                   | API Docs                                                                              |
+| ------------ | ---------- | ------------------------- | ------------------------------------------------------------------------------------- |
+| Shopify      | ✅ Primary | `shopify/adapter.md`      | [Shopify Blog API](https://shopify.dev/docs/api/admin-rest/2024-10/resources/article) |
+| WordPress    | 🔲 Ready   | `wordpress/adapter.md`    | [WP REST API](https://developer.wordpress.org/rest-api/)                              |
+| Webflow      | 🔲 Ready   | `webflow/adapter.md`      | [Webflow CMS API](https://developers.webflow.com/)                                    |
+| Next.js      | 🔲 Ready   | `nextjs/adapter.md`       | MDX + Frontmatter                                                                     |
+| Generic HTML | 🔲 Ready   | `generic-html/adapter.md` | Any CMS                                                                               |
 
 ---
 
@@ -33,6 +33,7 @@ Core Engine Output → Platform Adapter → CMS-Ready Content
 Each adapter must implement the following structure:
 
 ### Input (Core Engine Output)
+
 ```json
 {
   "title": "Article title",
@@ -49,6 +50,7 @@ Each adapter must implement the following structure:
 ```
 
 ### Output (Platform-Specific)
+
 Each adapter transforms this into the platform's required format.
 
 ---
@@ -74,4 +76,4 @@ To add support for a new platform:
 
 ---
 
-*Built by Trending Society*
+_Built by Trending Society_

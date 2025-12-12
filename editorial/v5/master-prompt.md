@@ -629,10 +629,7 @@ Use this template:
           "name": "Trending Society",
           "url": "https://trendingsociety.com"
         },
-        "sameAs": [
-          "[Author LinkedIn URL]",
-          "[Author Twitter URL]"
-        ]
+        "sameAs": ["[Author LinkedIn URL]", "[Author Twitter URL]"]
       },
       "publisher": {
         "@type": "Organization",
@@ -699,7 +696,8 @@ Use this template:
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "[Article Title]"
+          "name": "[Article Title]",
+          "item": "{{site_url}}/blogs/{{slug}}"
         }
       ]
     }
@@ -708,6 +706,7 @@ Use this template:
 ```
 
 **For NewsArticle (timely/breaking news), replace the @type and add:**
+
 ```json
 {
   "@type": "NewsArticle",
@@ -1052,19 +1051,19 @@ Already implemented in template:
 
 ### Competitive Advantages Summary (v5.2)
 
-| Feature              | % Sites Using | Status    | Your Edge     |
-| -------------------- | ------------- | --------- | ------------- |
-| FAQPage schema       | 15%           | ✅        | Standard      |
-| Article schema       | 30%           | ✅        | Standard      |
-| sameAs links         | 3%            | ✅        | Elite         |
-| Speakable markup     | <1%           | ✅        | Elite         |
-| Entity markup        | 5%            | ✅        | Elite         |
-| HowTo schema         | 2%            | ✅        | Elite         |
-| **NewsArticle**      | 8%            | ✅ v5.2   | **Top 10%**   |
-| **Author Person**    | 5%            | ✅ v5.2   | **Elite**     |
-| **Mentions property**| <1%           | ✅ v5.2   | **Top 1%**    |
-| **BreadcrumbList**   | 12%           | ✅ v5.2   | **Standard+** |
-| **Multi-platform**   | 5%            | ✅ v5.2   | **Elite**     |
+| Feature               | % Sites Using | Status  | Your Edge     |
+| --------------------- | ------------- | ------- | ------------- |
+| FAQPage schema        | 15%           | ✅      | Standard      |
+| Article schema        | 30%           | ✅      | Standard      |
+| sameAs links          | 3%            | ✅      | Elite         |
+| Speakable markup      | <1%           | ✅      | Elite         |
+| Entity markup         | 5%            | ✅      | Elite         |
+| HowTo schema          | 2%            | ✅      | Elite         |
+| **NewsArticle**       | 8%            | ✅ v5.2 | **Top 10%**   |
+| **Author Person**     | 5%            | ✅ v5.2 | **Elite**     |
+| **Mentions property** | <1%           | ✅ v5.2 | **Top 1%**    |
+| **BreadcrumbList**    | 12%           | ✅ v5.2 | **Standard+** |
+| **Multi-platform**    | 5%            | ✅ v5.2 | **Elite**     |
 
 **Result:** Top 0.1% of publishers for SEO/AEO optimization
 
@@ -1104,12 +1103,12 @@ Add the CSS from Section 10 to your Shopify theme's custom CSS file or the `<sty
 
 This prompt generates platform-agnostic output. For platform-specific formatting, see:
 
-| Platform | Adapter Location | Status |
-|----------|-----------------|--------|
-| Shopify | `platforms/shopify/adapter.md` | ✅ Primary |
-| WordPress | `platforms/wordpress/adapter.md` | 🔲 Planned |
-| Webflow | `platforms/webflow/adapter.md` | 🔲 Planned |
-| Next.js | `platforms/nextjs/adapter.md` | 🔲 Planned |
+| Platform     | Adapter Location                    | Status     |
+| ------------ | ----------------------------------- | ---------- |
+| Shopify      | `platforms/shopify/adapter.md`      | ✅ Primary |
+| WordPress    | `platforms/wordpress/adapter.md`    | 🔲 Planned |
+| Webflow      | `platforms/webflow/adapter.md`      | 🔲 Planned |
+| Next.js      | `platforms/nextjs/adapter.md`       | 🔲 Planned |
 | Generic HTML | `platforms/generic-html/adapter.md` | 🔲 Planned |
 
 ---

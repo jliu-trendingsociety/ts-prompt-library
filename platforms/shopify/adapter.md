@@ -16,10 +16,10 @@ Transforms core engine output into Shopify Blog Article format for publishing vi
 
 ## API Reference
 
-| Endpoint | Method | Purpose |
-|----------|--------|---------|
-| `/admin/api/2024-10/blogs/{blog_id}/articles.json` | POST | Create article |
-| `/admin/api/2024-10/blogs/{blog_id}/articles/{id}.json` | PUT | Update article |
+| Endpoint                                                | Method | Purpose        |
+| ------------------------------------------------------- | ------ | -------------- |
+| `/admin/api/2024-10/blogs/{blog_id}/articles.json`      | POST   | Create article |
+| `/admin/api/2024-10/blogs/{blog_id}/articles/{id}.json` | PUT    | Update article |
 
 **Documentation:** [Shopify Blog Articles API](https://shopify.dev/docs/api/admin-rest/2024-10/resources/article)
 
@@ -27,18 +27,18 @@ Transforms core engine output into Shopify Blog Article format for publishing vi
 
 ## Field Mapping
 
-| Core Engine Field | Shopify Field | Notes |
-|-------------------|---------------|-------|
-| `title` | `title` | Direct mapping |
-| `content_html` | `body_html` | Direct mapping |
-| `excerpt` | `summary_html` | Direct mapping |
-| `seo_title` | `metafields[seo_title]` | Via metafield |
-| `meta_description` | `metafields[seo_description]` | Via metafield |
-| `slug` | `handle` | Direct mapping |
-| `tags` | `tags` | Comma-separated string |
-| `schema_json` | Injected in `body_html` | As `<script type="application/ld+json">` |
-| `author` | `author` | Author name string |
-| `published_at` | `published_at` | ISO 8601 format |
+| Core Engine Field  | Shopify Field                 | Notes                                    |
+| ------------------ | ----------------------------- | ---------------------------------------- |
+| `title`            | `title`                       | Direct mapping                           |
+| `content_html`     | `body_html`                   | Direct mapping                           |
+| `excerpt`          | `summary_html`                | Direct mapping                           |
+| `seo_title`        | `metafields[seo_title]`       | Via metafield                            |
+| `meta_description` | `metafields[seo_description]` | Via metafield                            |
+| `slug`             | `handle`                      | Direct mapping                           |
+| `tags`             | `tags`                        | Comma-separated string                   |
+| `schema_json`      | Injected in `body_html`       | As `<script type="application/ld+json">` |
+| `author`           | `author`                      | Author name string                       |
+| `published_at`     | `published_at`                | ISO 8601 format                          |
 
 ---
 
@@ -82,7 +82,7 @@ The JSON-LD schema should be injected at the end of `body_html`:
 {{content_html}}
 
 <script type="application/ld+json">
-{{schema_json}}
+  {{schema_json}}
 </script>
 ```
 
@@ -119,12 +119,12 @@ See: `editorial/v5/master-prompt.md` → Section 10: CSS Styles
 
 ## Error Handling
 
-| Error Code | Meaning | Resolution |
-|------------|---------|------------|
-| 401 | Unauthorized | Check access token |
-| 404 | Blog not found | Verify blog_id |
-| 422 | Validation error | Check required fields |
-| 429 | Rate limited | Implement backoff |
+| Error Code | Meaning          | Resolution            |
+| ---------- | ---------------- | --------------------- |
+| 401        | Unauthorized     | Check access token    |
+| 404        | Blog not found   | Verify blog_id        |
+| 422        | Validation error | Check required fields |
+| 429        | Rate limited     | Implement backoff     |
 
 ---
 
@@ -136,4 +136,4 @@ See: `editorial/v5/master-prompt.md` → Section 10: CSS Styles
 
 ---
 
-*Adapter maintained by Trending Society*
+_Adapter maintained by Trending Society_
