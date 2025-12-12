@@ -2,7 +2,7 @@
 
 # Last Updated: 2025-12-12
 
-# Version: 1.1.0
+# Version: 1.2.0
 
 ## Overview
 
@@ -80,7 +80,8 @@ Key files:
 ### External Platform URLs:
 
 - Notion Hub: https://www.notion.so/2c753453a9f181e8867cea6bedd58fee
-- Linear Project: https://linear.app/trending-society/project/multi-vertical-blog-engine-b980cfc74730
+- Linear Project (Blog Engine): https://linear.app/trending-society/project/multi-vertical-blog-engine-b980cfc74730
+- Linear Project (Creator Commerce): https://linear.app/trending-society/project/creator-commerce-protocol-cb9281292cf1
 
 ---
 
@@ -253,6 +254,122 @@ Always hyperlink external resources in documentation:
 
 - Admin API: https://shopify.dev/docs/api/admin-rest
 - Blog Articles: https://shopify.dev/docs/api/admin-rest/2024-10/resources/article
+
+### Newspaper Theme (Multi-Vertical Deployment):
+
+- Prebuilt Websites: https://demo.tagdiv.com/select_demo/newspaper-prebuilt-websites/?demo-type=membership
+- tagDiv: https://tagdiv.com
+- Features: 120+ prebuilt websites, paywall/membership, 2000+ cloud templates
+- Use: Rapid vertical website deployment (launch in hours, not weeks)
+- Vertical Templates:
+  - Tech: INSIGHT AI, GADGETS PRO
+  - Sports: SPORTS PRO, RACING MAG
+  - Entertainment: GOSSIP PRO, ENTERTAINMENT
+  - Finance: CRYPTO NEWS PRO, BLOCKCHAIN PRO
+  - Real Estate: REAL ESTATE PRO, ESTATES PRO
+  - Gaming: CRYPTO GAMING PRO, GAMING
+  - Health: MEDICINE PRO, HEALTH BLOG
+  - Business: OFFICE NEXUS, PUBLICATION PRO
+  - Job Board: JOB HUNT PRO
+  - Music: MUSIC & LIFE PRO, FOREST BEAT
+  - World News: WORLD MATTERS, WORLD NEWS
+  - Art: ART MAGAZINE, ART BLOG PRO
+
+### Airtable (Marketing Ops):
+
+- Platform: https://airtable.com
+- API Docs: https://airtable.com/developers/web/api/introduction
+- Use: Human QA layer for interns/part-time staff, upskilling pipeline
+- QA Workflow Columns:
+  - Article URL, Vertical, AI Quality Score
+  - QA Status: Pending → In Review → Approved → Published
+  - Assigned To, Issues Found, Fix Applied
+  - Time Spent, Skill Level, Creator Commerce Eligible
+
+### Iris ID (Biometric Verification):
+
+- Purpose: Identity verification for AI Avatar/Voice Cloning consent
+- Verification Layers:
+  - Iris Scan: Unique biometric identity proof
+  - Liveness Detection: Prevent deepfake fraud
+  - KYC/AML Compliance: Legal identity verification
+  - Consent Capture: Documented voice/avatar permission
+  - Wallet Binding: Link identity to UCI payments
+- Integration Points:
+  - ElevenLabs Voice Cloning → Requires Iris ID
+  - HeyGen Avatar Creation → Requires Iris ID
+  - UCI Payment Eligibility → Requires verified identity
+
+---
+
+## Creator Commerce Protocol
+
+### Project Links:
+
+- **Linear**: https://linear.app/trending-society/project/creator-commerce-protocol-cb9281292cf1
+- **Master Tracker**: TRE-8
+- **Scope**: 72 database tables across 20 modules
+
+### Architecture Layers:
+
+```
+PRESENTATION    → App Shell, Creation Studio, Trend Watch
+INTELLIGENCE    → Prompts, RSS/Feeds, Research Agent
+GENERATION      → Pollo AI 50+ models, Avatars/Voices, Content
+DISTRIBUTION    → OAuth/Publishing, Campaigns, Attribution
+COMMERCE        → Orders, Payouts, Affiliates, Licensing
+FOUNDATION      → Tenants/Identity, Tiers, Consumers, Ops
+```
+
+### Upskilling Pathway (Intern → Creator):
+
+```
+Intern QA Role → AI Upskilling → Portfolio Building → Creator Commerce Program → UCI Recipient
+```
+
+1. **Intern QA Role**: Human QA via Airtable Marketing Ops
+2. **AI Upskilling**: Learn AI tools, prompt engineering, automation
+3. **Portfolio Building**: Create own content, voice clone, avatar
+4. **Creator Commerce Program**: Full creator-owner status
+5. **UCI Recipient**: Universal Creative Income payments
+
+---
+
+## Universal Creative Income (UCI)
+
+### Foundation:
+
+UCI is the revenue model enabling creators to earn passive income from their AI-cloned voice/avatar assets.
+
+### Requirements:
+
+1. **Iris ID Verification**: Biometric identity proof
+2. **Voice/Avatar Clone**: ElevenLabs voice + HeyGen avatar
+3. **Consent Documentation**: Legal opt-in for content types
+4. **Wallet Binding**: Stripe Connect for payouts
+
+### Revenue Flow:
+
+```
+Creator verifies identity (Iris ID)
+        ↓
+Clones voice/avatar (ElevenLabs/HeyGen)
+        ↓
+Content generated using their assets
+        ↓
+Revenue tracked per use ($0.03-0.20/1K chars)
+        ↓
+UCI payment distributed (Stripe Connect, weekly)
+```
+
+### UCI Tiers:
+
+| Tier | Requirements | Est. Monthly |
+| -------- | ---------------------------------- | ------------ |
+| Bronze | Verified + Voice Clone | $50-200 |
+| Silver | + Avatar + 10K content uses | $200-500 |
+| Gold | + 100K uses + brand deals | $500-2,000 |
+| Platinum | Celebrity/Influencer tier | $2,000-10K+ |
 
 ---
 
