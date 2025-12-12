@@ -10,14 +10,14 @@ across GitHub, Notion, and Linear.
 
 ## 🗺️ Quick Navigation
 
-| Section | Description |
-|---------|-------------|
-| [📋 Version Control](#-version-control-requirements) | File headers, versioning, sync protocol |
-| [🔗 Platform Links](#-external-platform-urls) | GitHub, Notion, Linear URLs |
-| [🎬 AI Video Tools](#-ai-video-generation) | HeyGen, Pollo.ai, Decart, etc. |
-| [💰 Creator Economy](#-creator-commerce-protocol) | UCI, Iris ID, Airtable Ops |
-| [📝 Multi-Vertical Blog](#-multi-vertical-blog-engine-project) | 12 verticals, metrics |
-| [✅ Quality Gates](#-quality-gates) | Article requirements |
+| Section                                                        | Description                             |
+| -------------------------------------------------------------- | --------------------------------------- |
+| [📋 Version Control](#-version-control-requirements)           | File headers, versioning, sync protocol |
+| [🔗 Platform Links](#-external-platform-urls)                  | GitHub, Notion, Linear URLs             |
+| [🎬 AI Video Tools](#-ai-video-generation)                     | HeyGen, Pollo.ai, Decart, etc.          |
+| [💰 Creator Economy](#-creator-commerce-protocol)              | UCI, Iris ID, Airtable Ops              |
+| [📝 Multi-Vertical Blog](#-multi-vertical-blog-engine-project) | 12 verticals, metrics                   |
+| [✅ Quality Gates](#-quality-gates)                            | Article requirements                    |
 
 ---
 
@@ -378,7 +378,7 @@ flowchart LR
     B --> C[📁 Portfolio]
     C --> D[🎨 Creator Commerce]
     D --> E[💰 UCI Payments]
-    
+
     style A fill:#e3f2fd
     style B fill:#fff3e0
     style C fill:#f3e5f5
@@ -386,13 +386,13 @@ flowchart LR
     style E fill:#fff9c4
 ```
 
-| Step | Role | Activities |
-|------|------|------------|
-| 1️⃣ | **Intern QA** | Human QA via Airtable Marketing Ops |
-| 2️⃣ | **AI Upskilling** | Learn AI tools, prompt engineering, automation |
-| 3️⃣ | **Portfolio** | Create own content, voice clone, avatar |
-| 4️⃣ | **Creator Commerce** | Full creator-owner status |
-| 5️⃣ | **UCI Recipient** | Universal Creative Income payments |
+| Step | Role                 | Activities                                     |
+| ---- | -------------------- | ---------------------------------------------- |
+| 1️⃣   | **Intern QA**        | Human QA via Airtable Marketing Ops            |
+| 2️⃣   | **AI Upskilling**    | Learn AI tools, prompt engineering, automation |
+| 3️⃣   | **Portfolio**        | Create own content, voice clone, avatar        |
+| 4️⃣   | **Creator Commerce** | Full creator-owner status                      |
+| 5️⃣   | **UCI Recipient**    | Universal Creative Income payments             |
 
 ---
 
@@ -417,7 +417,7 @@ flowchart TD
     B --> C[📝 Content Generated]
     C --> D[📊 Usage Tracked]
     D --> E[💳 Weekly Payout]
-    
+
     style A fill:#e8eaf6
     style B fill:#fce4ec
     style C fill:#e0f7fa
@@ -512,11 +512,11 @@ Health & Wellness, Business, Job Board, Music, World News, Art, Lifestyle
 
 ## 📞 Contact
 
-| Role | Info |
-|------|------|
-| **Owner** | Jeff Liu |
+| Role           | Info                                                                           |
+| -------------- | ------------------------------------------------------------------------------ |
+| **Owner**      | Jeff Liu                                                                       |
 | **Repository** | [ts-prompt-library](https://github.com/jliu-trendingsociety/ts-prompt-library) |
-| **Team** | Trending Society |
+| **Team**       | Trending Society                                                               |
 
 ---
 
