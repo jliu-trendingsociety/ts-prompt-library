@@ -337,39 +337,41 @@ TRENDING SOCIETY SERVICE MENU (FOR CTAs)
 ------------------------------------------------
 When writing the CTA, choose ONE service from this menu that best matches the article's topic:
 
-1) "Social Commerce & Shopify Builds"
-   - Match: Social / commerce / Shopify / creators / community commerce
-   - URL: /services/social-commerce-shopify-builds
+**SERVICE MATCHING ALGORITHM** (see `core/engine/service-matching.md` for full spec)
 
-2) "Business Automation Workflows"
-   - Match: Internal efficiency / ops / tooling / workflow optimization
-   - URL: /services/business-automation-workflows
+Step 1: DETECT VERTICAL from article content
+Step 2: EXTRACT TOPICS with confidence scores  
+Step 3: MATCH SERVICE using affinity matrix below
 
-3) "Logo & Brand Design"
-   - Match: Visual identity / naming / branding / design systems
-   - URL: /services/logo-brand-design
+| Vertical | Primary Service | Secondary Service |
+|----------|----------------|-------------------|
+| Tech | Custom GPT Development | Business Automation |
+| Sports | Social Media Automation | SEO & GEO |
+| Finance | Custom Software | Business Automation |
+| Entertainment | Social Commerce & Shopify | Social Media Automation |
+| Real Estate | SEO & GEO | Custom Software |
+| Gaming | Social Media Automation | Custom GPT Development |
+| Health | SEO & GEO | Social Media Automation |
+| Business | Business Automation | Custom Software |
+| Job Board | SEO & GEO | Social Media Automation |
+| Music | Social Commerce & Shopify | Social Media Automation |
+| World News | SEO & GEO | Social Media Automation |
+| Art | Social Commerce & Shopify | Logo & Brand |
+| Lifestyle | Social Commerce & Shopify | Social Media Automation |
 
-4) "SEO & GEO Optimization"
-   - Match: Search visibility / local discovery / rankings / organic traffic
-   - URL: /services/seo-geo-optimization
+**AVAILABLE SERVICES:**
 
-5) "Custom Software Builds"
-   - Match: Deep technical solutions / infrastructure / custom development
-   - URL: /services/custom-software-builds
+1) "Social Commerce & Shopify Builds" → /services/social-commerce-shopify-builds
+2) "Business Automation Workflows" → /services/business-automation-workflows
+3) "Logo & Brand Design" → /services/logo-brand-design
+4) "SEO & GEO Optimization" → /services/seo-geo-optimization
+5) "Custom Software Builds" → /services/custom-software-builds
+6) "Custom GPT Development" → /services/custom-gpt-development
+7) "Social Media Automation" → /services/social-media-automation
+8) "SaaS Apps" → /services/saas-apps
 
-6) "Custom GPT Development"
-   - Match: AI agents / LLMs / copilots / custom models / ChatGPT
-   - URL: /services/custom-gpt-development
-
-7) "Social Media Automation"
-   - Match: Distribution / channels / content loops / scheduling / publishing
-   - URL: /services/social-media-automation
-
-8) "SaaS Apps"
-   - Match: Platforms / tools-as-products / recurring-revenue software / MVPs
-   - URL: /services/saas-apps
-
-Pick the most relevant one. Do NOT invent new services.
+Use the affinity matrix to select the most contextually relevant service.
+Do NOT invent new services.
 
 ------------------------------------------------
 QUALITY GATE (Internal Verification) — v5.2
