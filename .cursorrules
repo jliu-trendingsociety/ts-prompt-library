@@ -200,17 +200,20 @@ Always hyperlink external resources in documentation:
 ### AI Video Generation:
 
 - **HeyGen** (AI Avatars):
+
   - Platform: https://www.heygen.com
   - API Docs: https://docs.heygen.com
   - Templates: https://www.heygen.com/templates
   - Use: Avatar videos, talking heads, news hosts
 
 - **Pollo.ai** (Fast Video Gen):
+
   - Platform: https://pollo.ai
   - API Explorer: https://pollo.ai/api-platform/explore
   - Use: Text-to-video, image-to-video, batch processing
 
 - **Decart AI** (Real-time Video):
+
   - Platform: https://platform.decart.ai
   - SDK: @decartai/sdk
   - Models:
@@ -221,20 +224,24 @@ Always hyperlink external resources in documentation:
   - Use: Real-time processing, avatar lip-sync, style transfer
 
 - **Runway** (Cinematic):
+
   - Platform: https://runwayml.com
   - API Docs: https://docs.runwayml.com
   - Use: B-roll, cinematic clips, Gen-3
 
 - **Pika** (Motion Graphics):
+
   - Platform: https://pika.art
   - Use: Short-form, motion graphics
 
 - **Synthesia** (Enterprise Avatars):
+
   - Platform: https://www.synthesia.io
   - API Docs: https://docs.synthesia.io
   - Use: Enterprise avatar videos
 
 - **Lumen5** (Slideshows):
+
   - Platform: https://lumen5.com
   - Use: Slideshows, social clips
 

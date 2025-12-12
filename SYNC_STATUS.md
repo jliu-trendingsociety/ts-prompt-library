@@ -67,29 +67,29 @@
 
 ## Integration Status
 
-| Integration       | GitHub | Notion | Linear Issue | API Docs Linked | URL |
-| ----------------- | :----: | :----: | ------------ | --------------- | --- |
-| Shopify Admin API |   ✅   |   ✅   | TRE-32       | ✅              | [shopify.dev](https://shopify.dev/docs/api/admin-rest) |
-| Innoreader RSS    |   ✅   |   ✅   | TRE-36       | ✅              | [innoreader.com](https://www.innoreader.com) |
-| ElevenLabs Voice  |   🔲   |   ✅   | TRE-46       | ✅              | [elevenlabs.io](https://elevenlabs.io/creators) |
-| Polymarket API    |   🔲   |   ✅   | TRE-45       | ✅              | [docs.polymarket.com](https://docs.polymarket.com) |
+| Integration       | GitHub | Notion | Linear Issue | API Docs Linked | URL                                                                  |
+| ----------------- | :----: | :----: | ------------ | --------------- | -------------------------------------------------------------------- |
+| Shopify Admin API |   ✅   |   ✅   | TRE-32       | ✅              | [shopify.dev](https://shopify.dev/docs/api/admin-rest)               |
+| Innoreader RSS    |   ✅   |   ✅   | TRE-36       | ✅              | [innoreader.com](https://www.innoreader.com)                         |
+| ElevenLabs Voice  |   🔲   |   ✅   | TRE-46       | ✅              | [elevenlabs.io](https://elevenlabs.io/creators)                      |
+| Polymarket API    |   🔲   |   ✅   | TRE-45       | ✅              | [docs.polymarket.com](https://docs.polymarket.com)                   |
 | WordPress REST    |   🔲   |   ✅   | -            | 🔲              | [developer.wordpress.org](https://developer.wordpress.org/rest-api/) |
-| Webflow CMS       |   🔲   |   ✅   | -            | 🔲              | [developers.webflow.com](https://developers.webflow.com) |
+| Webflow CMS       |   🔲   |   ✅   | -            | 🔲              | [developers.webflow.com](https://developers.webflow.com)             |
 
 ---
 
 ## AI Video Generation Tools
 
-| Tool       | GitHub | Notion | Linear Issue | API Docs | URL |
-| ---------- | :----: | :----: | ------------ | :------: | --- |
-| HeyGen     |   ✅   |   🔲   | TRE-39/47    | ✅       | [heygen.com](https://www.heygen.com) |
-| Pollo.ai   |   ✅   |   🔲   | TRE-39       | ✅       | [pollo.ai](https://pollo.ai/api-platform/explore) |
-| Decart AI  |   ✅   |   🔲   | TRE-39       | ✅       | [platform.decart.ai](https://platform.decart.ai) |
-| Runway     |   ✅   |   🔲   | TRE-39       | ✅       | [runwayml.com](https://runwayml.com) |
-| Pika       |   ✅   |   🔲   | TRE-39       | 🔲       | [pika.art](https://pika.art) |
-| Synthesia  |   ✅   |   🔲   | TRE-39       | ✅       | [synthesia.io](https://www.synthesia.io) |
-| Lumen5     |   ✅   |   🔲   | TRE-39       | 🔲       | [lumen5.com](https://lumen5.com) |
-| Opus Clip  |   ✅   |   🔲   | TRE-39       | 🔲       | [opus.pro](https://www.opus.pro) |
+| Tool      | GitHub | Notion | Linear Issue | API Docs | URL                                               |
+| --------- | :----: | :----: | ------------ | :------: | ------------------------------------------------- |
+| HeyGen    |   ✅   |   🔲   | TRE-39/47    |    ✅    | [heygen.com](https://www.heygen.com)              |
+| Pollo.ai  |   ✅   |   🔲   | TRE-39       |    ✅    | [pollo.ai](https://pollo.ai/api-platform/explore) |
+| Decart AI |   ✅   |   🔲   | TRE-39       |    ✅    | [platform.decart.ai](https://platform.decart.ai)  |
+| Runway    |   ✅   |   🔲   | TRE-39       |    ✅    | [runwayml.com](https://runwayml.com)              |
+| Pika      |   ✅   |   🔲   | TRE-39       |    🔲    | [pika.art](https://pika.art)                      |
+| Synthesia |   ✅   |   🔲   | TRE-39       |    ✅    | [synthesia.io](https://www.synthesia.io)          |
+| Lumen5    |   ✅   |   🔲   | TRE-39       |    🔲    | [lumen5.com](https://lumen5.com)                  |
+| Opus Clip |   ✅   |   🔲   | TRE-39       |    🔲    | [opus.pro](https://www.opus.pro)                  |
 
 ---
 
