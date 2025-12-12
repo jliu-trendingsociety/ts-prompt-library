@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Planned
+
 - Vertical-specific prompt templates (12 verticals)
 - Innoreader RSS feed configurations
 - ElevenLabs voice integration workflows
@@ -21,6 +22,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [2.2.0] - 2025-12-12
 
 ### Added
+
 - `.cursorrules` - Cursor AI best practices and guidelines
 - `SYNC_STATUS.md` - Cross-platform sync tracking (GitHub/Notion/Linear)
 - `CHANGELOG.md` - Version history documentation
@@ -29,11 +31,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Linear Project: https://linear.app/trending-society/project/multi-vertical-blog-engine-b980cfc74730
 
 ### Updated
+
 - Expanded from 7 to 12 supported verticals:
   - Tech, Sports, Entertainment, Finance, Real Estate, Gaming
   - Health & Wellness, Business, Job Board, Music, World News, Art, Lifestyle
 
 ### Documented
+
 - **Investor Overview** - $50B+ TAM, revenue projections ($3.1M → $28.8M ARR)
 - **Vertical Publisher Strategy** - Publisher arbitrage vs NYT/Bloomberg
 - **Content Multiplication Engine** - 1 article → 10+ content pieces
@@ -42,6 +46,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Innoreader RSS Architecture** - 305+ feeds, 650-1,070 articles/day
 
 ### Linear Issues Created
+
 - TRE-30: Design core n8n workflow architecture
 - TRE-31: Create vertical-specific prompt templates
 - TRE-32: Build Shopify publishing integration
@@ -65,6 +70,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [2.1.0] - 2025-12-06
 
 ### Added
+
 - Enterprise operating system alignment features
 - AI Cost Control with model routing (85% savings on routine content)
 - Canonical ID System with 301 redirect automation
@@ -76,6 +82,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Cost-Optimized Prompts (Lite versions at $0.001 vs $0.025)
 
 ### Updated
+
 - Master Prompt to v5.1 with competitive edge features
 - Added sameAs Entity Authority (97% of competitors don't have)
 - Added Speakable Voice Optimization (99% of competitors don't have)
@@ -83,6 +90,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added HowTo Rich Snippets (98% of competitors don't have)
 
 ### Performance
+
 - SEO/AEO Rank: Top 1-2% of tech blogs
 - Grade: A (95/100)
 - Status: Production-Ready
@@ -92,6 +100,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [2.0.0] - 2025-11-15
 
 ### Added
+
 - Complete prompt library restructure
 - Modular folder organization
 - Core instructions and configuration
@@ -103,6 +112,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Shared resources (article index, source registry, service menu)
 
 ### Changed
+
 - Migrated from single-file to modular architecture
 - Introduced versioning for editorial prompts
 
@@ -111,6 +121,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0] - 2025-10-01
 
 ### Added
+
 - Initial prompt library creation
 - Basic blog post generation prompts
 - SEO optimization guidelines
@@ -120,12 +131,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Version History Summary
 
-| Version | Date | Highlights |
-|---------|------|------------|
-| 2.2.0 | 2025-12-12 | Multi-Vertical Blog Engine, 12 verticals, Notion/Linear sync |
-| 2.1.0 | 2025-12-06 | Enterprise features, v5.1 prompt, cost optimization |
-| 2.0.0 | 2025-11-15 | Modular restructure, v5 prompt |
-| 1.0.0 | 2025-10-01 | Initial release |
+| Version | Date       | Highlights                                                   |
+| ------- | ---------- | ------------------------------------------------------------ |
+| 2.2.0   | 2025-12-12 | Multi-Vertical Blog Engine, 12 verticals, Notion/Linear sync |
+| 2.1.0   | 2025-12-06 | Enterprise features, v5.1 prompt, cost optimization          |
+| 2.0.0   | 2025-11-15 | Modular restructure, v5 prompt                               |
+| 1.0.0   | 2025-10-01 | Initial release                                              |
 
 ---
 

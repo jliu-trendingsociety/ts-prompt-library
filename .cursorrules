@@ -1,5 +1,7 @@
 # Trending Society Prompt Library - Cursor Rules
+
 # Last Updated: 2025-12-12
+
 # Version: 1.0.0
 
 ## Overview
@@ -15,6 +17,7 @@ across GitHub, Notion, and Linear.
 ### When Updating Any File:
 
 1. **Update metadata** - Add/update YAML frontmatter with:
+
    ```yaml
    ---
    title: [Document Title]
@@ -27,6 +30,7 @@ across GitHub, Notion, and Linear.
    ```
 
 2. **Increment version numbers**:
+
    - MAJOR (X): Breaking changes or complete rewrites
    - MINOR (Y): New features or significant additions
    - PATCH (Z): Bug fixes, typos, minor updates
@@ -47,11 +51,13 @@ across GitHub, Notion, and Linear.
 ## Platform Sync Protocol
 
 ### Source of Truth Hierarchy:
+
 1. **GitHub** - Source of truth for code, prompts, and technical specs
 2. **Linear** - Source of truth for tasks, project status, and execution
 3. **Notion** - Source of truth for strategy, documentation, and investor materials
 
 ### Sync Checklist (use for every update):
+
 - [ ] GitHub file updated with new `last_updated` date
 - [ ] Notion page updated with matching date
 - [ ] Linear project/issue updated with matching date
@@ -59,9 +65,11 @@ across GitHub, Notion, and Linear.
 - [ ] All cross-references use correct hyperlinks
 
 ### GitHub Repository URLs:
+
 Base URL: https://github.com/jliu-trendingsociety/ts-prompt-library
 
 Key files:
+
 - Master Prompt: https://github.com/jliu-trendingsociety/ts-prompt-library/blob/main/editorial/v5/master-prompt.md
 - Master Prompt Lite: https://github.com/jliu-trendingsociety/ts-prompt-library/blob/main/editorial/v5/master-prompt-lite.md
 - Article Index: https://github.com/jliu-trendingsociety/ts-prompt-library/blob/main/shared/article-index.md
@@ -70,6 +78,7 @@ Key files:
 - n8n Example: https://github.com/jliu-trendingsociety/ts-prompt-library/blob/main/integrations/n8n-blog-post-example.md
 
 ### External Platform URLs:
+
 - Notion Hub: https://www.notion.so/2c753453a9f181e8867cea6bedd58fee
 - Linear Project: https://linear.app/trending-society/project/multi-vertical-blog-engine-b980cfc74730
 
@@ -78,6 +87,7 @@ Key files:
 ## File Naming Conventions
 
 ### General Rules:
+
 - Use **kebab-case** for all files: `master-prompt.md`, `source-registry.md`
 - Use **lowercase** for folder names: `editorial/`, `shared/`
 - Version folders use format: `v5/`, `v6/`
@@ -85,6 +95,7 @@ Key files:
 - Example files suffix: `-example.md`
 
 ### Prompt File Structure:
+
 ```
 [module]/
 ├── README.md           # Module overview
@@ -99,6 +110,7 @@ Key files:
 ## Required File Headers
 
 ### For Prompt Files (Markdown):
+
 ```yaml
 ---
 title: [Title]
@@ -114,6 +126,7 @@ vertical: [tech|sports|finance|all]
 ```
 
 ### For Documentation Files:
+
 ```yaml
 ---
 title: [Title]
@@ -147,6 +160,7 @@ Scope (optional):
 ```
 
 ### Examples:
+
 ```
 feat(editorial): Add finance vertical prompt template
 fix(shared): Correct source registry URLs
@@ -162,6 +176,7 @@ chore: Add .cursorrules and SYNC_STATUS.md
 Always hyperlink external resources in documentation:
 
 ### ElevenLabs:
+
 - Creator Program: https://elevenlabs.io/creators
 - Voice Library: https://elevenlabs.io/voice-library
 - API Docs: https://elevenlabs.io/docs
@@ -169,16 +184,19 @@ Always hyperlink external resources in documentation:
 - Iconic Marketplace: https://elevenlabs.io
 
 ### Polymarket:
+
 - API Docs: https://docs.polymarket.com
 - Quickstart: https://docs.polymarket.com/quickstart
 - TypeScript SDK: https://polymarket-data.com
 - Python Package: https://pypi.org/project/polymarket-apis/
 
 ### Innoreader:
+
 - Homepage: https://www.innoreader.com
 - API Docs: https://developer.innoreader.com
 
 ### Shopify:
+
 - Admin API: https://shopify.dev/docs/api/admin-rest
 - Blog Articles: https://shopify.dev/docs/api/admin-rest/2024-10/resources/article
 
@@ -187,14 +205,17 @@ Always hyperlink external resources in documentation:
 ## Multi-Vertical Blog Engine Project
 
 ### Project Links:
+
 - **Notion**: https://www.notion.so/2c753453a9f181e8867cea6bedd58fee
 - **Linear**: https://linear.app/trending-society/project/multi-vertical-blog-engine-b980cfc74730
 
 ### Supported Verticals (12):
-Tech, Sports, Entertainment, Finance, Real Estate, Gaming, 
+
+Tech, Sports, Entertainment, Finance, Real Estate, Gaming,
 Health & Wellness, Business, Job Board, Music, World News, Art, Lifestyle
 
 ### Key Metrics:
+
 - Content Output: 180,000 pieces/month
 - Affiliate Revenue: $1.98M-5.6M/year potential
 - Podcast Revenue: $15K-25K/month
@@ -205,15 +226,17 @@ Health & Wellness, Business, Job Board, Music, World News, Art, Lifestyle
 ## AI Model Routing
 
 ### Cost-Optimized Selection:
-| Content Type | Model | Cost/Use |
-|-------------|-------|----------|
-| Blog (routine) | GPT-4o-mini | $0.001-0.003 |
+
+| Content Type   | Model         | Cost/Use     |
+| -------------- | ------------- | ------------ |
+| Blog (routine) | GPT-4o-mini   | $0.001-0.003 |
 | Blog (premium) | Claude Sonnet | $0.015-0.025 |
-| Social posts | Gemini Flash | $0.0004 |
-| Email | Gemini Pro | $0.001 |
-| Video scripts | Gemini Flash | $0.0003 |
+| Social posts   | Gemini Flash  | $0.0004      |
+| Email          | Gemini Pro    | $0.001       |
+| Video scripts  | Gemini Flash  | $0.0003      |
 
 ### When to Use Premium:
+
 - Investor-facing content
 - Technical deep-dives
 - Content requiring nuanced tone
@@ -224,6 +247,7 @@ Health & Wellness, Business, Job Board, Music, World News, Art, Lifestyle
 ## Quality Gates
 
 Every generated article must pass:
+
 - [ ] Primary keyword in title, first paragraph, H2, SEO title, meta description
 - [ ] Source badge in opening paragraph
 - [ ] 2-5 internal links (use article-index.md)
@@ -239,12 +263,12 @@ Every generated article must pass:
 
 ## Verification Schedule
 
-| Resource | Frequency | Last Verified | Next Due |
-|----------|-----------|---------------|----------|
-| Master Prompt | Monthly | 2025-12-12 | 2026-01-12 |
-| Source Registry | Quarterly | 2025-12-12 | 2026-03-12 |
-| Article Index | Weekly | 2025-12-12 | 2025-12-19 |
-| External Links | Monthly | 2025-12-12 | 2026-01-12 |
+| Resource        | Frequency | Last Verified | Next Due   |
+| --------------- | --------- | ------------- | ---------- |
+| Master Prompt   | Monthly   | 2025-12-12    | 2026-01-12 |
+| Source Registry | Quarterly | 2025-12-12    | 2026-03-12 |
+| Article Index   | Weekly    | 2025-12-12    | 2025-12-19 |
+| External Links  | Monthly   | 2025-12-12    | 2026-01-12 |
 
 ---
 
