@@ -1,0 +1,105 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "NewsArticle Schema Template",
+  "description": "JSON-LD template for NewsArticle schema (timely/breaking content)",
+  "version": "1.0",
+  "template": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "NewsArticle",
+        "@id": "{{site_url}}/blogs/{{slug}}#article",
+        "headline": "{{title}}",
+        "description": "{{meta_description}}",
+        "dateline": "{{dateline_city}}",
+        "printSection": "{{section}}",
+        "author": {
+          "@type": "Person",
+          "name": "{{author_name}}",
+          "url": "{{author_url}}",
+          "jobTitle": "{{author_job_title}}",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Trending Society",
+            "url": "https://trendingsociety.com"
+          },
+          "sameAs": "{{author_same_as}}"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Trending Society",
+          "url": "https://trendingsociety.com",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://trendingsociety.com/logo.png"
+          },
+          "sameAs": [
+            "https://www.linkedin.com/company/trending-society",
+            "https://www.instagram.com/trendingsociety.ai/",
+            "https://www.tiktok.com/@trendingsociety.ai"
+          ]
+        },
+        "datePublished": "{{date_published}}",
+        "dateModified": "{{date_modified}}",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "{{site_url}}/blogs/{{slug}}"
+        },
+        "keywords": "{{keywords}}",
+        "articleSection": "{{vertical}}",
+        "wordCount": "{{word_count}}",
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [".key-takeaways", ".faq-section"]
+        },
+        "mentions": "{{mentions}}",
+        "citation": "{{citations}}"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "{{site_url}}"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "{{category}}",
+            "item": "{{site_url}}/blogs/{{category_slug}}"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "{{title}}",
+            "item": "{{site_url}}/blogs/{{slug}}"
+          }
+        ]
+      }
+    ]
+  },
+  "variables": {
+    "site_url": "Base URL of the site",
+    "slug": "URL-friendly article identifier",
+    "title": "Article headline",
+    "meta_description": "SEO meta description",
+    "dateline_city": "City where news originated (e.g., 'SAN FRANCISCO')",
+    "section": "Print section name (e.g., 'Technology', 'Business', 'Sports')",
+    "author_name": "Author's full name",
+    "author_url": "Author's profile page URL",
+    "author_job_title": "Author's job title",
+    "author_same_as": "Array of author's social profile URLs",
+    "date_published": "ISO 8601 date string",
+    "date_modified": "ISO 8601 date string",
+    "keywords": "Comma-separated keywords",
+    "vertical": "Content vertical (Tech, Sports, Finance, etc.)",
+    "word_count": "Approximate word count",
+    "mentions": "Array of Person/Organization entities mentioned",
+    "citations": "Array of source citations",
+    "category": "Display name for category breadcrumb",
+    "category_slug": "URL-friendly category identifier"
+  },
+  "usage": "Use for timely/breaking news content. Eligible for Google Top Stories and News carousel. For evergreen content, use article.schema.json"
+}
